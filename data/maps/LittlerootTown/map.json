@@ -17,6 +17,11 @@
       "map": "MAP_CEDAR_FOREST",
       "offset": -30,
       "direction": "up"
+    },
+    {
+      "map": "MAP_CEDAR_FOREST",
+      "offset": -30,
+      "direction": "up"
     }
   ],
   "object_events": [
