@@ -1,0 +1,133 @@
+diff --git a/include/wild_encounter.h b/include/wild_encounter.h
+index f1e0b6af..94eb9359 100644
+--- a/include/wild_encounter.h
++++ b/include/wild_encounter.h
+@@ -35,6 +35,7 @@ struct WildEncounterTypes
+     const struct WildPokemonInfo *rockSmashMonsInfo;
+     const struct WildPokemonInfo *fishingMonsInfo;
+     const struct WildPokemonInfo *hiddenMonsInfo;
++    const struct WildPokemonInfo *darkLandMonsInfo;
+ };
+ 
+ struct WildPokemonHeader
+diff --git a/src/pokedex_area_screen.c b/src/pokedex_area_screen.c
+index 79201e93..9d3e8fd6 100644
+--- a/src/pokedex_area_screen.c
++++ b/src/pokedex_area_screen.c
+@@ -441,6 +441,8 @@ static bool8 MapHasSpecies(const struct WildEncounterTypes *info, u32 headerSect
+ 
+     if (MonListHasSpecies(info->landMonsInfo, species, NUM_LAND_MONS_ENCOUNTER_SLOTS))
+         return TRUE;
++    if (MonListHasSpecies(info->darkLandMonsInfo, species, NUM_DARK_LAND_MONS_ENCOUNTER_SLOTS))
++        return TRUE;
+     if (MonListHasSpecies(info->waterMonsInfo, species, NUM_WATER_MONS_ENCOUNTER_SLOTS))
+         return TRUE;
+ // When searching the fishing encounters, this incorrectly uses the size of the land encounters.
+diff --git a/src/wild_encounter.c b/src/wild_encounter.c
+index dd6a0c88..8c8b1b76 100644
+--- a/src/wild_encounter.c
++++ b/src/wild_encounter.c
+@@ -64,6 +64,10 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
+ 
+ #include "data/wild_encounters.h"
+ 
++#define DARK_GRASS_DOUBLE_WILD_CHANCE 20 // % chance a dark grass encounter is a double battle
++
++static bool8 TryDoDarkGrassDoubleBattle(u16 metatileBehavior);
++
+ const struct WildPokemon gWildFeebas = {20, 25, SPECIES_FEEBAS};
+ 
+ static const u16 sRoute119WaterTileData[] =
+@@ -662,6 +666,17 @@ bool8 AreLegendariesInSootopolisPreventingEncounters(void)
+     return FlagGet(FLAG_LEGENDARIES_IN_SOOTOPOLIS);
+ }
+ 
++// Returns the dark grass table when standing in long grass and the map has one,
++// otherwise the normal land table.
++static const struct WildPokemonInfo *GetLandMonsInfoForTile(u32 headerId, enum TimeOfDay timeOfDay, u16 metatileBehavior)
++{
++    const struct WildEncounterTypes *encounterTypes = &gWildMonHeaders[headerId].encounterTypes[timeOfDay];
++
++    if (MetatileBehavior_IsLongGrass(metatileBehavior) && encounterTypes->darkLandMonsInfo != NULL)
++        return encounterTypes->darkLandMonsInfo;
++    return encounterTypes->landMonsInfo;
++}
++
+ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
+ {
+     u32 headerId;
+@@ -712,13 +727,16 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
+     {
+         if (MetatileBehavior_IsLandWildEncounter(curMetatileBehavior) == TRUE)
+         {
++            const struct WildPokemonInfo *landMonsInfo;
++
+             timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_LAND);
++            landMonsInfo = GetLandMonsInfoForTile(headerId, timeOfDay, curMetatileBehavior);
+ 
+-            if (gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo == NULL)
++            if (landMonsInfo == NULL)
+                 return FALSE;
+             else if (prevMetatileBehavior != curMetatileBehavior && !AllowWildCheckOnNewMetatile())
+                 return FALSE;
+-            else if (WildEncounterCheck(gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo->encounterRate, FALSE) != TRUE)
++            else if (WildEncounterCheck(landMonsInfo->encounterRate, FALSE) != TRUE)
+                 return FALSE;
+ 
+             if (TryStartRoamerEncounter())
+@@ -739,12 +757,12 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
+                 }
+ 
+                 // try a regular wild land encounter
+-                if (TryGenerateWildMon(gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
++                if (TryGenerateWildMon(landMonsInfo, WILD_AREA_LAND, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
+                 {
+-                    if (TryDoDoubleWildBattle())
++                    if (TryDoDoubleWildBattle() || TryDoDarkGrassDoubleBattle(curMetatileBehavior))
+                     {
+                         struct Pokemon mon1 = gParties[B_TRAINER_OPPONENT_A][0];
+-                        TryGenerateWildMon(gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo, WILD_AREA_LAND, WILD_CHECK_KEEN_EYE);
++                        TryGenerateWildMon(landMonsInfo, WILD_AREA_LAND, WILD_CHECK_KEEN_EYE);
+                         gParties[B_TRAINER_OPPONENT_A][1] = mon1;
+                         BattleSetup_StartDoubleWildBattle();
+                     }
+@@ -889,9 +907,12 @@ bool8 SweetScentWildEncounter(void)
+     {
+         if (MetatileBehavior_IsLandWildEncounter(MapGridGetMetatileBehaviorAt(x, y)) == TRUE)
+         {
++            const struct WildPokemonInfo *landMonsInfo;
++
+             timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_LAND);
++            landMonsInfo = GetLandMonsInfoForTile(headerId, timeOfDay, MapGridGetMetatileBehaviorAt(x, y));
+ 
+-            if (gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo == NULL)
++            if (landMonsInfo == NULL)
+                 return FALSE;
+ 
+             if (TryStartRoamerEncounter())
+@@ -903,7 +924,7 @@ bool8 SweetScentWildEncounter(void)
+             if (DoMassOutbreakEncounterTest() == TRUE)
+                 SetUpMassOutbreakEncounter(0);
+             else
+-                TryGenerateWildMon(gWildMonHeaders[headerId].encounterTypes[timeOfDay].landMonsInfo, WILD_AREA_LAND, 0);
++                TryGenerateWildMon(landMonsInfo, WILD_AREA_LAND, 0);
+ 
+             BattleSetup_StartWildBattle();
+             return TRUE;
+@@ -1207,6 +1228,16 @@ bool8 TryDoDoubleWildBattle(void)
+     return FALSE;
+ }
+ 
++// Long (dark) grass has its own (higher) chance of a wild double battle, like Gen 5.
++static bool8 TryDoDarkGrassDoubleBattle(u16 metatileBehavior)
++{
++    if (!MetatileBehavior_IsLongGrass(metatileBehavior)
++     || GetSafariZoneFlag()
++     || GetMonsStateToDoubles() != PLAYER_HAS_TWO_USABLE_MONS)
++        return FALSE;
++    return RandomPercentage(RNG_NONE, DARK_GRASS_DOUBLE_WILD_CHANCE);
++}
++
+ u32 ChooseHiddenMonIndex(void)
+ {
+     #ifdef ENCOUNTER_CHANCE_HIDDEN_MONS_TOTAL
