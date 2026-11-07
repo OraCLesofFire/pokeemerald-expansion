@@ -9327,7 +9327,7 @@
     {
       "id": "LAYOUT_CEDAR_FOREST",
       "name": "CedarForest_Layout",
-      "width": 50,
+      "width": 54,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",

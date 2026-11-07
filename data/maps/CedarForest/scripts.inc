@@ -1,10 +1,19 @@
 CedarForest_MapScripts::
 	.byte 0
 
-CedarForest_EventScript_Sign::
-	msgbox CedarForest_Text_Sign, MSGBOX_SIGN
+CedarForest_EventScript_TrailSign::
+	msgbox CedarForest_Text_TrailSign, MSGBOX_SIGN
 	end
 
-CedarForest_Text_Sign:
-	.string "Cedar Forest\n"
+CedarForest_EventScript_RiverSign::
+	msgbox CedarForest_Text_RiverSign, MSGBOX_SIGN
+	end
+
+CedarForest_Text_RiverSign:
+	.string "Cedar River\n"
 	.string "“A river that brings new beginnings!”$"
+
+CedarForest_Text_TrailSign:
+	.string "Cedar Trail\p"
+	.string "{UP_ARROW} Cedar Rapids \n"
+	.string "{DOWN_ARROW} Unnamed town$"
