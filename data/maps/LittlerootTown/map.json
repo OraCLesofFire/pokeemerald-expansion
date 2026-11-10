@@ -15,12 +15,7 @@
   "connections": [
     {
       "map": "MAP_CEDAR_FOREST",
-      "offset": -30,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_CEDAR_FOREST",
-      "offset": -30,
+      "offset": -32,
       "direction": "up"
     }
   ],
