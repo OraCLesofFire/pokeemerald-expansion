@@ -833,6 +833,17 @@ const struct Tileset gTileset_UnionRoom =
     .callback = NULL,
 };
 
+const struct Tileset gTileset_AbandonedCistern =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AbandonedCistern,
+    .palettes = gTilesetPalettes_AbandonedCistern,
+    .metatiles = gMetatiles_AbandonedCistern,
+    .metatileAttributes = gMetatileAttributes_AbandonedCistern,
+    .callback = NULL,
+};
+
 #else
 
 // FRLG tilesets
