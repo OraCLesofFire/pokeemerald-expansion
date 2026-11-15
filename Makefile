@@ -224,6 +224,7 @@ MAPJSON      := $(TOOLS_DIR)/mapjson/mapjson$(EXE)
 JSONPROC     := $(TOOLS_DIR)/jsonproc/jsonproc$(EXE)
 TRAINERPROC  := $(TOOLS_DIR)/trainerproc/trainerproc$(EXE)
 PATCHELF     := $(TOOLS_DIR)/patchelf/patchelf$(EXE)
+SCRIPT       := $(TOOLS_DIR)/poryscript/poryscript$(EXE)
 ifeq ($(shell uname),Darwin)
     ROMTEST ?= $(shell command -v mgba-rom-test-mac 2>/dev/null || echo $(TOOLS_DIR)/mgba/mgba-rom-test-mac)
     ROMTESTHYDRA := $(shell command -v mgba-rom-test-hydra 2>/dev/null || echo $(TOOLS_DIR)/mgba-rom-test-hydra/mgba-rom-test-hydra)
@@ -414,6 +415,11 @@ include json_data_rules.mk
 include audio_rules.mk
 include trainer_rules.mk
 
+# Poryscript: every data/**/*.pory file is compiled into a .inc file next to it.
+# The poryscript binary is not tracked in git; see tools/poryscript/README.md.
+PORYSCRIPT_CONFIGS := $(TOOLS_DIR)/poryscript/font_config.json $(TOOLS_DIR)/poryscript/command_config.json
+AUTO_GEN_TARGETS += $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
+
 # NOTE: Tools must have been built prior (FIXME)
 # so you can't really call this rule directly
 generated: $(AUTO_GEN_TARGETS)
@@ -435,6 +441,12 @@ generated: $(AUTO_GEN_TARGETS)
 %.fastSmol: %      ; $(SMOL) -w $< $@ false false false
 %.smol:     %      ; $(SMOL) -w $< $@
 %.rl:       %      ; $(GFX) $< $@
+
+data/%.inc: data/%.pory $(SCRIPT) $(PORYSCRIPT_CONFIGS)
+	$(SCRIPT) -i $< -o $@ -fc $(TOOLS_DIR)/poryscript/font_config.json -cc $(TOOLS_DIR)/poryscript/command_config.json
+
+$(SCRIPT):
+	@echo "ERROR: Poryscript is not installed at $(SCRIPT). See $(TOOLS_DIR)/poryscript/README.md" >&2; exit 1
 
 clean-teachables_intermediates:
 	rm -f $(DATA_SRC_SUBDIR)/tutor_moves.h
