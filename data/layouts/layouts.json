@@ -9333,6 +9333,26 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/CedarForest/border.bin",
       "blockdata_filepath": "data/layouts/CedarForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABANDONED_CISTERN",
+      "name": "Abandoned_Cistern_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AbandonedCistern",
+      "border_filepath": "data/layouts/Abandoned_Cistern/border.bin",
+      "blockdata_filepath": "data/layouts/Abandoned_Cistern/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABANDONED_CISTERN_B1F",
+      "name": "AbandonedCistern_B1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_AbandonedCistern",
+      "border_filepath": "data/layouts/AbandonedCistern_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/AbandonedCistern_B1F/map.bin"
     }
   ]
 }

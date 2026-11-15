@@ -34,7 +34,36 @@
       "flag": "FLAG_ITEM_CEDAR_FOREST_POKEBALL"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_ABANDONED_CISTERN_EXTERIOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_ABANDONED_CISTERN_EXTERIOR",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 0,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_ABANDONED_CISTERN_EXTERIOR",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 1,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_ABANDONED_CISTERN_EXTERIOR",
+      "dest_warp_id": "3"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {

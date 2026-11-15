@@ -1740,3 +1740,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/wild_encounter.inc"
 
 	.include "data/maps/CedarForest/scripts.inc"
+
+	.include "data/maps/AbandonedCistern_Exterior/scripts.inc"
+
+	.include "data/maps/AbandonedCistern_Interior/scripts.inc"
+
+	.include "data/maps/AbandonedCistern_B1F/scripts.inc"
