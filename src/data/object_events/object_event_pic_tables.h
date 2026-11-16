@@ -1113,6 +1113,17 @@ static const struct SpriteFrameImage sPicTable_PokeBall[] = {
     overworld_frame(gObjectEventPic_PokeBall, 2, 4, 0),
 };
 
+// Park Ball item ball. Reuses the Park Ball art that ships for follower Poké Balls
+// (gObjectEventPic_ParkBall), so it needs OW_FOLLOWERS_POKEBALLS to stay TRUE.
+static const struct SpriteFrameImage sPicTable_ItemBallPark[] = {
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 0),
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 1),
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 2),
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 3),
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 4),
+    overworld_frame(gObjectEventPic_ParkBall, 2, 4, 0),
+};
+
 extern const struct SpriteFrameImage gFieldEffectObjectPicTable_BallLight[];
 
 #if OW_FOLLOWERS_POKEBALLS
