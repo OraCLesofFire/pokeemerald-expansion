@@ -12323,14 +12323,16 @@ const struct ItemInfo gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_STRUGGLE_BUG] =
     {
         .name = ITEM_NAME("TM01"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Powerful, but fails\n"
-            "if the user is\n"
-            "hit by the foe."),
+            "The user attacks by\n"
+            "struggling against\n"
+            "opposing Pokémon.\n"
+            "This also lowers\n"
+            "their Sp. Atk stats."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
