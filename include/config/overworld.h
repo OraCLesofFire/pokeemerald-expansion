@@ -5,6 +5,9 @@
 #define OW_RUNNING_INDOORS          GEN_LATEST  // In Gen4+, players are allowed to run indoors.
 #define SLOW_MOVEMENT_ON_STAIRS     FALSE       // If enabled, the player will move slower up/down stairs like in FR
 
+// Graphics config
+#define OW_FRLG_OBJECT_EVENTS       TRUE        // If enabled, FireRed/LeafGreen overworld sprites (OBJ_EVENT_GFX_*_FRLG, Kanto NPCs, gym leaders, etc.) are included in Emerald builds. Without this they only exist when building FRLG and show up invisible.
+
 // Other settings
 #define OW_POISON_DAMAGE                GEN_LATEST // In Gen4, Pokémon no longer faint from Poison in the overworld. In Gen5+, they no longer take damage at all.
 #define OW_DOUBLE_APPROACH_WITH_ONE_MON FALSE      // If enabled, you can be spotted by two trainers at the same time even if you only have one eligible Pokémon in your party.
