@@ -664,11 +664,14 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 #define FLAG_HIDDEN_ITEM_CEDAR_FOREST_POTION                 (FLAG_HIDDEN_ITEMS_START + 0x70)
+#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_REVIVE                 (FLAG_HIDDEN_ITEMS_START + 0x71)
+#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_ZING               (FLAG_HIDDEN_ITEMS_START + 0x72)
+#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_NET_BALL           (FLAG_HIDDEN_ITEMS_START + 0x73)
 
 // #define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+// #define FLAG_UNUSED_0x265  0x265 // Unused Flag
+// #define FLAG_UNUSED_0x266  0x266 // Unused Flag
+// #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
@@ -1226,14 +1229,15 @@
 #define FLAG_ITEM_CEDAR_FOREST_TM_STRUGGLE_BUG                      0x494
 #define FLAG_ITEM_CEDAR_FOREST_HEART_SCALE                          0x495
 #define FLAG_HIDE_CEDAR_FOREST_RIVAL                                0x496
-
+#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_SUPER_POTION           0x497
+#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_ETHER                  0x498
 
 // #define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
 // #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 // #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 // #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
+// #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
+// #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
 #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag

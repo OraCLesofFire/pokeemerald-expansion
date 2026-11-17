@@ -1,1 +1,56 @@
 mapscripts AbandonedCistern_Exterior_MapScripts {}
+
+//
+// SIGN EVENTS
+//
+
+script AbandonedCistern_Exterior_EventScript_KeepOutSign {
+    msgbox("KEEP OUT"), MSGBOX_SIGN}
+
+//
+// NPC TALK EVENTS
+//
+
+script AbandonedCistern_Exterior_EventScript_GrassIsGreener {
+    msgbox(format("The grass is so much greener on the other side. I bet there are rare pok\emon on the other side."), MSGBOX_NPC)
+    }
+
+//
+// NPC TRAINER BATTLE EVENTS
+//
+
+script AbandonedCistern_Exterior_EventScript_BugCatcher {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_BUGCATCHER,
+        format("If you go deeper into a forest, you're bound to find rare bug pok\emon!"),
+        format("Having rare bug pok\emon doesn't make you a good trainer."))
+    msgbox(format("I wonder if the bug pokemon on the inside are rarer?"), MSGBOX_AUTOCLOSE)
+}
+
+script AbandonedCistern_Exterior_EventScript_Ranger_1 {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_RANGER_1,
+        format("The pokemon here are much stronger than near the path."),
+        format("Of course, if you got this far you can handle yourself."))
+    msgbox(format("Always be careful when entering a new area. You never know what you'll find."), MSGBOX_AUTOCLOSE)
+}
+
+script AbandonedCistern_Exterior_EventScript_Ranger_2 {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_RANGER_2,
+        format("I found a way inside the cistern. It's super dangerous there."),
+        format("I managed to get all that way, then lost on my way out."))
+    msgbox(format("There's two secrets to getting inside. The first one is Cut!"), MSGBOX_AUTOCLOSE)
+}
+
+script AbandonedCistern_Exterior_EventScript_Hiker {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_HIKER,
+        format("I heard there was a cave nearby, but I can't seem to find it."),
+        format("Maybe I should do another lap around the cistern."))
+    msgbox(format("If you find the cave, don't tell me where it is, I love finding things on my own!"), MSGBOX_AUTOCLOSE)
+}
+
+script AbandonedCistern_Exterior_EventScript_Collector {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_COLLECTOR,
+        format("My research indicates the presence of some super strong pok\emon nearby!"),
+        format("I just wanted to catch a glimpse of a super powerful pok\emon."))
+    msgbox(format("I wonder where the super powerful pok\emon are? I hear they like moist grass."), MSGBOX_AUTOCLOSE)
+}
+

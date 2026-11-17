@@ -25,7 +25,8 @@ script CedarForest_EventScript_ParkSign {
 //
 
 script CedarForest_EventScript_TallGrassRanger {
-    msgbox(format("Be careful in the tall grass.\pIn the tall grass multiple pok\emon can attack at the same time!"), MSGBOX_NPC)}
+    msgbox(format("Be careful in the tall grass.\pIn the tall grass multiple pok\emon can attack at the same time!"), MSGBOX_NPC)
+    }
 
 script CedarForest_EventScript_Chaser {
     msgbox(format("I'm gonna get you!"), MSGBOX_NPC)
@@ -39,11 +40,18 @@ script CedarForest_EventScript_Chasee {
 // NPC TRAINER BATTLE EVENTS
 //
 
-script CedarForest_EventScript_BugCatcher {
-    trainerbattle_single(TRAINER_CEDAR_BUGCATCHER,
+script CedarForest_EventScript_BugCatcher_1 {
+    trainerbattle_single(TRAINER_CEDAR_BUGCATCHER_1,
         format("Check out all the neat bug pok\emon I've caught!"),
         format("Aren't all my bug pok\emon neat!"))
     msgbox(format("Did you know bug Pok\emon evolve super fast?"), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_EventScript_BugCatcher_2 {
+    trainerbattle_single(TRAINER_CEDAR_BUGCATCHER_2,
+        format("Be Careful of my bugs poison!"),
+        format("Poison Pok\emon are neat!"))
+    msgbox(format("Maybe I should become a ninja, I hear they use poison type pok\emon?"), MSGBOX_AUTOCLOSE)
 }
 
 script CedarForest_EventScript_Picnicker {
@@ -53,27 +61,48 @@ script CedarForest_EventScript_Picnicker {
     msgbox(format("I just love the way the river winds through the forest!"), MSGBOX_AUTOCLOSE)
 }
 
-script CedarForest_EventScript_SisAndBro_Sis {
-    trainerbattle_double(TRAINER_CEDAR_SISANDBRO,
+script CedarForest_EventScript_Twins_1 {
+    trainerbattle_double(TRAINER_CEDAR_TWINS,
         format("I love the slide the best!"),
         format("It's my fault we lost."),
         format("You need at least two Pok\emon to battle us!"))
-    msgbox(format("I wish I didn't let my big bro down."), MSGBOX_AUTOCLOSE)
+    msgbox(format("I wish I didn't let my sis down."), MSGBOX_AUTOCLOSE)
 }
 
-script CedarForest_EventScript_SisAndBro_Bro {
-    trainerbattle_double(TRAINER_CEDAR_SISANDBRO,
+script CedarForest_EventScript_Twins_2 {
+    trainerbattle_double(TRAINER_CEDAR_TWINS,
         format("The sandbox is my favorite!"),
         format("We would have won if my sister was better."),
         format("You need at least two Pok\emon to battle us!"))
     msgbox(format("I still love my sis even if she isn't very good at battles."), MSGBOX_AUTOCLOSE)
 }
 
-script CedarForest_EventScript_Ranger {
-    trainerbattle_single(TRAINER_CEDAR_RANGER,
+script CedarForest_EventScript_Ranger_1 {
+    trainerbattle_single(TRAINER_CEDAR_RANGER_1,
     format("Don't you know it's dangerous to leave the path?"),
     format("You are definitely strong enough to explore the rest of the forest."))
-    msgbox(format("There's an old cistern with rare pok\emon hidden somewhere in the forest!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Be careful. Sometimes strong pokemon appear off the path."), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_EventScript_Ranger_2 {
+    trainerbattle_single(TRAINER_CEDAR_RANGER_2,
+    format("How did you find this place?"),
+    format("There's an abandoned cistern deeper in the forest."))
+    msgbox(format("The pokemon deeper in the forest are much stronger."), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_EventScript_Lass {
+    trainerbattle_single(TRAINER_CEDAR_LASS,
+    format("I just love how beautiful the river looks here!"),
+    format("Don't you think the way it winds is just entrancing?"))
+    msgbox(format("I wish I could stay here all day."), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_EventScript_Fisherman {
+    trainerbattle_single(TRAINER_CEDAR_FISHERMAN,
+    format("There's nothing better than relaxing with a rod and the water."),
+    format("I don't mind losing, just means I can get back to fishing faster."))
+    msgbox(format("I wonder what I'll fish up next?"), MSGBOX_AUTOCLOSE)
 }
 
 //
