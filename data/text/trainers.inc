@@ -3325,18 +3325,6 @@ Route121_Text_PatPostBattle:
 	.string "I raise every POKéMON with the same\n"
 	.string "love and care--I don't pick favorites.$"
 
-Route121_Text_MarcelIntro:
-	.string "My POKéMON have never tasted defeat!\n"
-	.string "On their next win, I'm entering them\l"
-	.string "in CONTESTS.$"
-
-Route121_Text_MarcelDefeat:
-	.string "Oh, now what happened here?$"
-
-Route121_Text_MarcelPostBattle:
-	.string "I may have to train my gang some more\n"
-	.string "before entering any CONTEST.$"
-
 Route123_Text_WendyIntro:
 	.string "Want to determine how strong you are?\n"
 	.string "I'll be the test!$"
@@ -3539,33 +3527,6 @@ Route123_Text_FrederickPostBattle:
 	.string "Contribute to your allowance?\n"
 	.string "Wasn't the prize money enough?$"
 
-Route123_Text_AlbertoIntro:
-	.string "I have to tell you, BIRD POKéMON\n"
-	.string "are my obsession!\p"
-	.string "Birds are cool!\n"
-	.string "They're the best!$"
-
-Route123_Text_AlbertoDefeat:
-	.string "Even in defeat, BIRD POKéMON are cool!$"
-
-Route123_Text_AlbertoPostBattle:
-	.string "I gather BIRD POKéMON feathers that\n"
-	.string "scatter during battles.\p"
-	.string "I'm going to make a hat with\n"
-	.string "BIRD POKéMON feathers.$"
-
-Route123_Text_EdIntro:
-	.string "When there are no TRAINERS around,\n"
-	.string "I let my POKéMON battle each other.\l"
-	.string "I watch them.$"
-
-Route123_Text_EdDefeat:
-	.string "I kind of like your POKéMON.$"
-
-Route123_Text_EdPostBattle:
-	.string "Hehe, I'm swiping your battling ideas!\n"
-	.string "I think they'll make me better.$"
-
 Route123_Text_JonasIntro:
 	.string "I lay in ambush, and a TRAINER has\n"
 	.string "landed in my trap!$"
@@ -3754,20 +3715,6 @@ Route124_Text_RoyPostRematch:
 Route124_Text_RoyRematchNotEnoughMons:
 	.string "ROY: Did you want to battle us?\n"
 	.string "Bring two POKéMON, then.$"
-
-Route124_Text_DeclanIntro:
-	.string "Here I am swimming by my lonesome\n"
-	.string "on this wide, beautiful sea.\p"
-	.string "There's no other word for it.\n"
-	.string "This is pathetic!$"
-
-Route124_Text_DeclanDefeat:
-	.string "I'm feeling blue.\n"
-	.string "Blue as the sky…$"
-
-Route124_Text_DeclanPostBattle:
-	.string "I should chat up lady SWIMMERS\n"
-	.string "and invite them on a long swim.$"
 
 Route124_Text_IsabellaIntro:
 	.string "I'm not going to lose to some\n"
