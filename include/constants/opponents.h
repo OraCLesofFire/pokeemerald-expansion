@@ -7,7 +7,7 @@
 #define TRAINER_NONE                          0
 #define TRAINER_CEDAR_BUGCATCHER              1
 #define TRAINER_CEDAR_PICNICKER               2
-#define TRAINER_CEDAR_SISANDBRO               3
+#define TRAINER_CEDAR_TWINS                   3
 #define TRAINER_CEDAR_RANGER                  4
 #define TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA  5
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6

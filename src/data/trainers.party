@@ -77,7 +77,7 @@ Comments can be added as C comment blocks
 
 /*Ambition Trainers*/
 
-=== TRAINER_CEDAR_BUGCATCHER ===
+=== TRAINER_CEDAR_BUGCATCHER_1 ===
 Name: ROSS
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -94,12 +94,37 @@ Caterpie
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Caterpie
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Metapod
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CEDAR_BUGCATCHER_2 ===
+Name: ROSS
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
 Weedle
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Weedle
 Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Weedle
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kakuna
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_PICNICKER ===
@@ -119,9 +144,9 @@ Taillow
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CEDAR_SISANDBRO ===
+=== TRAINER_CEDAR_TWINS ===
 Name: AVA & ALEX
-Class: Sis And Bro
+Class: Twins
 Pic: Twins
 Music: Twins
 Double Battle: Yes
@@ -135,7 +160,27 @@ Tyrogue
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CEDAR_RANGER ===
+=== TRAINER_CEDAR_RANGER_1 ===
+Name: HOLLY
+Class: Pkmn Ranger
+Pic: TRAINER_PIC_POKEMON_RANGER_F
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Taillow
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lotad
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seedot
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CEDAR_RANGER_2 ===
 Name: HOLLY
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
@@ -149,6 +194,42 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Deerling
 Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CEDAR_LASS ===
+Name: HOLLY
+Class: Lass
+Pic: Lass
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Kriketot
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nickit
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CEDAR_FISHERMAN ===
+Name: HOLLY
+Class: Fisherman
+Pic: Fisherman
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Magikarp
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Magikarp
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Goldeen
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA ===
@@ -168,6 +249,108 @@ Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Chikorita
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_EXTERIOR_BUGCATCHER ===
+Name: HOLLY
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Venipede
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dewpider
+Level: 7
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_EXTERIOR_HIKER ===
+Name: HOLLY
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Geodude
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Geodude
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rolycoly
+level 7:
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_RANGER_1 ===
+Name: HOLLY
+Class: Pkmn Ranger
+Pic: TRAINER_PIC_POKEMON_RANGER_F
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Sunkern
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chingling
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Slowpoke
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_RANGER_2 ===
+Name: HOLLY
+Class: Pkmn Ranger
+Pic: TRAINER_PIC_POKEMON_RANGER_F
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Morelull
+Level 6:
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chewtle
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tadbulb
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tympole:
+Level 8:
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_EXTERIOR_COLLECTOR ===
+Name: HOLLY
+Class: Collector
+Pic: TRAINER_PIC_COLLECTOR
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Wimpod
+Level 2:
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wimpod:
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wimpod:
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

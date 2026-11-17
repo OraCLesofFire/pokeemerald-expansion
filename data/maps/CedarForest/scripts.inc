@@ -54,19 +54,19 @@ CedarForest_EventScript_Picnicker::
 	return
 
 
-CedarForest_EventScript_SisAndBro_Sis::
+CedarForest_EventScript_Twins_1::
 # 57 "data/maps/CedarForest/scripts.pory"
-	trainerbattle_double TRAINER_CEDAR_SISANDBRO, CedarForest_EventScript_SisAndBro_Sis_Text_0, CedarForest_EventScript_SisAndBro_Sis_Text_1, CedarForest_EventScript_SisAndBro_Sis_Text_2
+	trainerbattle_double TRAINER_CEDAR_TWINS, CedarForest_EventScript_Twins_1_Text_0, CedarForest_EventScript_Twins_1_Text_1, CedarForest_EventScript_Twins_1_Text_2
 # 61 "data/maps/CedarForest/scripts.pory"
-	msgbox CedarForest_EventScript_SisAndBro_Sis_Text_3, MSGBOX_AUTOCLOSE
+	msgbox CedarForest_EventScript_Twins_1_Text_3, MSGBOX_AUTOCLOSE
 	return
 
 
-CedarForest_EventScript_SisAndBro_Bro::
+CedarForest_EventScript_Twins_2::
 # 65 "data/maps/CedarForest/scripts.pory"
-	trainerbattle_double TRAINER_CEDAR_SISANDBRO, CedarForest_EventScript_SisAndBro_Bro_Text_0, CedarForest_EventScript_SisAndBro_Bro_Text_1, CedarForest_EventScript_SisAndBro_Sis_Text_2
+	trainerbattle_double TRAINER_CEDAR_TWINS, CedarForest_EventScript_Twins_2_Text_0, CedarForest_EventScript_Twins_2_Text_1, CedarForest_EventScript_Twins_1_Text_2
 # 69 "data/maps/CedarForest/scripts.pory"
-	msgbox CedarForest_EventScript_SisAndBro_Bro_Text_2, MSGBOX_AUTOCLOSE
+	msgbox CedarForest_EventScript_Twins_2_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
@@ -238,33 +238,33 @@ CedarForest_EventScript_Picnicker_Text_2:
 	.string "I just love the way the river winds\n"
 	.string "through the forest!$"
 
-CedarForest_EventScript_SisAndBro_Sis_Text_0:
+CedarForest_EventScript_Twins_1_Text_0:
 # 58 "data/maps/CedarForest/scripts.pory"
 	.string "I love the slide the best!$"
 
-CedarForest_EventScript_SisAndBro_Sis_Text_1:
+CedarForest_EventScript_Twins_1_Text_1:
 # 59 "data/maps/CedarForest/scripts.pory"
 	.string "It's my fault we lost.$"
 
-CedarForest_EventScript_SisAndBro_Sis_Text_2:
+CedarForest_EventScript_Twins_1_Text_2:
 # 60 "data/maps/CedarForest/scripts.pory"
 	.string "You need at least two Pokémon to\n"
 	.string "battle us!$"
 
-CedarForest_EventScript_SisAndBro_Sis_Text_3:
+CedarForest_EventScript_Twins_1_Text_3:
 # 61 "data/maps/CedarForest/scripts.pory"
-	.string "I wish I didn't let my big bro down.$"
+	.string "I wish I didn't let my sis down.$"
 
-CedarForest_EventScript_SisAndBro_Bro_Text_0:
+CedarForest_EventScript_Twins_2_Text_0:
 # 66 "data/maps/CedarForest/scripts.pory"
 	.string "The sandbox is my favorite!$"
 
-CedarForest_EventScript_SisAndBro_Bro_Text_1:
+CedarForest_EventScript_Twins_2_Text_1:
 # 67 "data/maps/CedarForest/scripts.pory"
 	.string "We would have won if my sister was\n"
 	.string "better.$"
 
-CedarForest_EventScript_SisAndBro_Bro_Text_2:
+CedarForest_EventScript_Twins_2_Text_2:
 # 69 "data/maps/CedarForest/scripts.pory"
 	.string "I still love my sis even if she isn't very\n"
 	.string "good at battles.$"
