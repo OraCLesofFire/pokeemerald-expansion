@@ -10,17 +10,17 @@
 #define TRAINER_CEDAR_SISANDBRO               3
 #define TRAINER_CEDAR_RANGER                  4
 #define TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA  5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
-#define TRAINER_GABRIELLE_1                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
-#define TRAINER_ED                           13
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
-#define TRAINER_DECLAN                       15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
+#define TRAINER_SLOT_6_NONE                   6
+#define TRAINER_SLOT_7_NONE                   7
+#define TRAINER_SLOT_8_NONE                   8
+#define TRAINER_SLOT_9_NONE                   9
+#define TRAINER_SLOT_10_NONE                 10
+#define TRAINER_SLOT_11_NONE                 11
+#define TRAINER_SLOT_12_NONE                 12
+#define TRAINER_SLOT_13_NONE                 13
+#define TRAINER_SLOT_14_NONE                 14
+#define TRAINER_SLOT_15_NONE                 15
+#define TRAINER_SLOT_16_NONE                 16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19
@@ -859,12 +859,14 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_GRUNT_PETALBURG_WOODS       855
+#define TRAINER_GRUNT_RUSTURF_TUNNEL        856
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 7 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     855
+#define TRAINERS_COUNT_EMERALD     857
 #define MAX_TRAINERS_COUNT_EMERALD 864
 
 #if IS_FRLG
