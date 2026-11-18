@@ -5,7 +5,8 @@ mapscripts AbandonedCistern_Exterior_MapScripts {}
 //
 
 script AbandonedCistern_Exterior_EventScript_KeepOutSign {
-    msgbox("KEEP OUT"), MSGBOX_SIGN}
+    msgbox("KEEP OUT", MSGBOX_SIGN)
+    }
 
 //
 // NPC TALK EVENTS
@@ -19,8 +20,8 @@ script AbandonedCistern_Exterior_EventScript_GrassIsGreener {
 // NPC TRAINER BATTLE EVENTS
 //
 
-script AbandonedCistern_Exterior_EventScript_BugCatcher {
-    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_BUGCATCHER,
+script AbandonedCistern_Exterior_EventScript_Bug_Catcher {
+    trainerbattle_single(TRAINER_CISTERN_EXTERIOR_BUG_CATCHER,
         format("If you go deeper into a forest, you're bound to find rare bug pok\emon!"),
         format("Having rare bug pok\emon doesn't make you a good trainer."))
     msgbox(format("I wonder if the bug pokemon on the inside are rarer?"), MSGBOX_AUTOCLOSE)

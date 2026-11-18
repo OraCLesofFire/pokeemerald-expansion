@@ -27,156 +27,188 @@ CedarForest_EventScript_TallGrassRanger::
 
 
 CedarForest_EventScript_Chaser::
-# 31 "data/maps/CedarForest/scripts.pory"
+# 32 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_Chaser_Text_0, MSGBOX_NPC
 	return
 
 
 CedarForest_EventScript_Chasee::
-# 35 "data/maps/CedarForest/scripts.pory"
+# 36 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_Chasee_Text_0, MSGBOX_NPC
 	return
 
 
-CedarForest_EventScript_BugCatcher::
-# 43 "data/maps/CedarForest/scripts.pory"
-	trainerbattle_single TRAINER_CEDAR_BUGCATCHER, CedarForest_EventScript_BugCatcher_Text_0, CedarForest_EventScript_BugCatcher_Text_1
-# 46 "data/maps/CedarForest/scripts.pory"
-	msgbox CedarForest_EventScript_BugCatcher_Text_2, MSGBOX_AUTOCLOSE
+CedarForest_EventScript_Bug_Catcher_1::
+# 44 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_BUG_CATCHER_1, CedarForest_EventScript_Bug_Catcher_1_Text_0, CedarForest_EventScript_Bug_Catcher_1_Text_1
+# 47 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Bug_Catcher_1_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+CedarForest_EventScript_Bug_Catcher_2::
+# 51 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_BUG_CATCHER_2, CedarForest_EventScript_Bug_Catcher_2_Text_0, CedarForest_EventScript_Bug_Catcher_2_Text_1
+# 54 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Bug_Catcher_2_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 CedarForest_EventScript_Picnicker::
-# 50 "data/maps/CedarForest/scripts.pory"
+# 58 "data/maps/CedarForest/scripts.pory"
 	trainerbattle_single TRAINER_CEDAR_PICNICKER, CedarForest_EventScript_Picnicker_Text_0, CedarForest_EventScript_Picnicker_Text_1
-# 53 "data/maps/CedarForest/scripts.pory"
+# 61 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_Picnicker_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 CedarForest_EventScript_Twins_1::
-# 57 "data/maps/CedarForest/scripts.pory"
+# 65 "data/maps/CedarForest/scripts.pory"
 	trainerbattle_double TRAINER_CEDAR_TWINS, CedarForest_EventScript_Twins_1_Text_0, CedarForest_EventScript_Twins_1_Text_1, CedarForest_EventScript_Twins_1_Text_2
-# 61 "data/maps/CedarForest/scripts.pory"
+# 69 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_Twins_1_Text_3, MSGBOX_AUTOCLOSE
 	return
 
 
 CedarForest_EventScript_Twins_2::
-# 65 "data/maps/CedarForest/scripts.pory"
+# 73 "data/maps/CedarForest/scripts.pory"
 	trainerbattle_double TRAINER_CEDAR_TWINS, CedarForest_EventScript_Twins_2_Text_0, CedarForest_EventScript_Twins_2_Text_1, CedarForest_EventScript_Twins_1_Text_2
-# 69 "data/maps/CedarForest/scripts.pory"
+# 77 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_Twins_2_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
-CedarForest_EventScript_Ranger::
-# 73 "data/maps/CedarForest/scripts.pory"
-	trainerbattle_single TRAINER_CEDAR_RANGER, CedarForest_EventScript_Ranger_Text_0, CedarForest_EventScript_Ranger_Text_1
-# 76 "data/maps/CedarForest/scripts.pory"
-	msgbox CedarForest_EventScript_Ranger_Text_2, MSGBOX_AUTOCLOSE
+CedarForest_EventScript_Ranger_1::
+# 81 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_RANGER_1, CedarForest_EventScript_Ranger_1_Text_0, CedarForest_EventScript_Ranger_1_Text_1
+# 84 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Ranger_1_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+CedarForest_EventScript_Ranger_2::
+# 88 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_RANGER_2, CedarForest_EventScript_Ranger_2_Text_0, CedarForest_EventScript_Ranger_2_Text_1
+# 91 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Ranger_2_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+CedarForest_EventScript_Lass::
+# 95 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_LASS, CedarForest_EventScript_Lass_Text_0, CedarForest_EventScript_Lass_Text_1
+# 98 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Lass_Text_2, MSGBOX_AUTOCLOSE
+	return
+
+
+CedarForest_EventScript_Fisherman::
+# 102 "data/maps/CedarForest/scripts.pory"
+	trainerbattle_single TRAINER_CEDAR_FISHERMAN, CedarForest_EventScript_Fisherman_Text_0, CedarForest_EventScript_Fisherman_Text_1
+# 105 "data/maps/CedarForest/scripts.pory"
+	msgbox CedarForest_EventScript_Fisherman_Text_2, MSGBOX_AUTOCLOSE
 	return
 
 
 CedarForest_EventScript_RivalTrigger_1::
-# 84 "data/maps/CedarForest/scripts.pory"
+# 113 "data/maps/CedarForest/scripts.pory"
 	lockall
-# 85 "data/maps/CedarForest/scripts.pory"
+# 114 "data/maps/CedarForest/scripts.pory"
 	playse SE_PIN
-# 86 "data/maps/CedarForest/scripts.pory"
+# 115 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, Common_Movement_ExclamationMark
-# 87 "data/maps/CedarForest/scripts.pory"
+# 116 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 88 "data/maps/CedarForest/scripts.pory"
+# 117 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, CedarForest_Movement_RivalApproach_1
-# 89 "data/maps/CedarForest/scripts.pory"
+# 118 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 90 "data/maps/CedarForest/scripts.pory"
+# 119 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_RivalTrigger_1_Text_0
-# 91 "data/maps/CedarForest/scripts.pory"
+# 120 "data/maps/CedarForest/scripts.pory"
 	trainerbattle_no_intro TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA, CedarForest_Text_RivalDefeat
-# 100 "data/maps/CedarForest/scripts.pory"
+# 129 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_RivalTrigger_1_Text_1
-# 101 "data/maps/CedarForest/scripts.pory"
+# 130 "data/maps/CedarForest/scripts.pory"
 	closemessage
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, CedarForest_EventScript_RivalTrigger_1_Movement_0
-# 103 "data/maps/CedarForest/scripts.pory"
+# 132 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 104 "data/maps/CedarForest/scripts.pory"
+# 133 "data/maps/CedarForest/scripts.pory"
 	removeobject LOCALID_CEDAR_RIVAL
-# 105 "data/maps/CedarForest/scripts.pory"
+# 134 "data/maps/CedarForest/scripts.pory"
 	setflag FLAG_HIDE_CEDAR_FOREST_RIVAL
-# 106 "data/maps/CedarForest/scripts.pory"
+# 135 "data/maps/CedarForest/scripts.pory"
 	setvar VAR_CEDAR_FOREST_STATE, 1
-# 107 "data/maps/CedarForest/scripts.pory"
+# 136 "data/maps/CedarForest/scripts.pory"
 	releaseall
 	return
 
 
 CedarForest_EventScript_RivalTrigger_2::
-# 111 "data/maps/CedarForest/scripts.pory"
+# 140 "data/maps/CedarForest/scripts.pory"
 	lockall
-# 112 "data/maps/CedarForest/scripts.pory"
+# 141 "data/maps/CedarForest/scripts.pory"
 	playse SE_PIN
-# 113 "data/maps/CedarForest/scripts.pory"
+# 142 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, Common_Movement_ExclamationMark
-# 114 "data/maps/CedarForest/scripts.pory"
+# 143 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 115 "data/maps/CedarForest/scripts.pory"
+# 144 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, CedarForest_Movement_RivalApproach_2
-# 116 "data/maps/CedarForest/scripts.pory"
+# 145 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 117 "data/maps/CedarForest/scripts.pory"
+# 146 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_RivalTrigger_1_Text_0
-# 118 "data/maps/CedarForest/scripts.pory"
+# 147 "data/maps/CedarForest/scripts.pory"
 	trainerbattle_no_intro TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA, CedarForest_Text_RivalDefeat
-# 127 "data/maps/CedarForest/scripts.pory"
+# 156 "data/maps/CedarForest/scripts.pory"
 	msgbox CedarForest_EventScript_RivalTrigger_1_Text_1
-# 128 "data/maps/CedarForest/scripts.pory"
+# 157 "data/maps/CedarForest/scripts.pory"
 	closemessage
-# 129 "data/maps/CedarForest/scripts.pory"
+# 158 "data/maps/CedarForest/scripts.pory"
 	applymovement LOCALID_CEDAR_RIVAL, CedarForest_EventScript_RivalTrigger_1_Movement_0
-# 130 "data/maps/CedarForest/scripts.pory"
+# 159 "data/maps/CedarForest/scripts.pory"
 	waitmovement 0
-# 131 "data/maps/CedarForest/scripts.pory"
+# 160 "data/maps/CedarForest/scripts.pory"
 	removeobject LOCALID_CEDAR_RIVAL
-# 132 "data/maps/CedarForest/scripts.pory"
+# 161 "data/maps/CedarForest/scripts.pory"
 	setflag FLAG_HIDE_CEDAR_FOREST_RIVAL
-# 133 "data/maps/CedarForest/scripts.pory"
+# 162 "data/maps/CedarForest/scripts.pory"
 	setvar VAR_CEDAR_FOREST_STATE, 1
-# 134 "data/maps/CedarForest/scripts.pory"
+# 163 "data/maps/CedarForest/scripts.pory"
 	releaseall
 	return
 
 
-# 141 "data/maps/CedarForest/scripts.pory"
+# 170 "data/maps/CedarForest/scripts.pory"
 CedarForest_Movement_RivalApproach_1:
-# 142 "data/maps/CedarForest/scripts.pory"
+# 171 "data/maps/CedarForest/scripts.pory"
 	face_player
 	step_end
 
-# 145 "data/maps/CedarForest/scripts.pory"
+# 174 "data/maps/CedarForest/scripts.pory"
 CedarForest_Movement_RivalApproach_2:
-# 146 "data/maps/CedarForest/scripts.pory"
+# 175 "data/maps/CedarForest/scripts.pory"
 	walk_right
-# 147 "data/maps/CedarForest/scripts.pory"
+# 176 "data/maps/CedarForest/scripts.pory"
 	face_player
 	step_end
 
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 CedarForest_EventScript_RivalTrigger_1_Movement_0:
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
-# 102 "data/maps/CedarForest/scripts.pory"
+# 131 "data/maps/CedarForest/scripts.pory"
 	walk_fast_up
 	step_end
 
@@ -202,99 +234,153 @@ CedarForest_EventScript_TallGrassRanger_Text_0:
 	.string "attack at the same time!$"
 
 CedarForest_EventScript_Chaser_Text_0:
-# 31 "data/maps/CedarForest/scripts.pory"
+# 32 "data/maps/CedarForest/scripts.pory"
 	.string "I'm gonna get you!$"
 
 CedarForest_EventScript_Chasee_Text_0:
-# 35 "data/maps/CedarForest/scripts.pory"
+# 36 "data/maps/CedarForest/scripts.pory"
 	.string "You'll never catch me!$"
 
-CedarForest_EventScript_BugCatcher_Text_0:
-# 44 "data/maps/CedarForest/scripts.pory"
+CedarForest_EventScript_Bug_Catcher_1_Text_0:
+# 45 "data/maps/CedarForest/scripts.pory"
 	.string "Check out all the neat bug pokémon I've\n"
 	.string "caught!$"
 
-CedarForest_EventScript_BugCatcher_Text_1:
-# 45 "data/maps/CedarForest/scripts.pory"
+CedarForest_EventScript_Bug_Catcher_1_Text_1:
+# 46 "data/maps/CedarForest/scripts.pory"
 	.string "Aren't all my bug pokémon neat!$"
 
-CedarForest_EventScript_BugCatcher_Text_2:
-# 46 "data/maps/CedarForest/scripts.pory"
+CedarForest_EventScript_Bug_Catcher_1_Text_2:
+# 47 "data/maps/CedarForest/scripts.pory"
 	.string "Did you know bug Pokémon evolve super\n"
 	.string "fast?$"
 
+CedarForest_EventScript_Bug_Catcher_2_Text_0:
+# 52 "data/maps/CedarForest/scripts.pory"
+	.string "Be Careful of my bugs poison!$"
+
+CedarForest_EventScript_Bug_Catcher_2_Text_1:
+# 53 "data/maps/CedarForest/scripts.pory"
+	.string "Poison Pokémon are neat!$"
+
+CedarForest_EventScript_Bug_Catcher_2_Text_2:
+# 54 "data/maps/CedarForest/scripts.pory"
+	.string "Maybe I should become a ninja, I hear\n"
+	.string "they use poison type pokémon?$"
+
 CedarForest_EventScript_Picnicker_Text_0:
-# 51 "data/maps/CedarForest/scripts.pory"
+# 59 "data/maps/CedarForest/scripts.pory"
 	.string "The forest is so beautiful this time of\n"
 	.string "year.$"
 
 CedarForest_EventScript_Picnicker_Text_1:
-# 52 "data/maps/CedarForest/scripts.pory"
+# 60 "data/maps/CedarForest/scripts.pory"
 	.string "This forest is a lot less beautiful\n"
 	.string "without my pokémon.$"
 
 CedarForest_EventScript_Picnicker_Text_2:
-# 53 "data/maps/CedarForest/scripts.pory"
+# 61 "data/maps/CedarForest/scripts.pory"
 	.string "I just love the way the river winds\n"
 	.string "through the forest!$"
 
 CedarForest_EventScript_Twins_1_Text_0:
-# 58 "data/maps/CedarForest/scripts.pory"
+# 66 "data/maps/CedarForest/scripts.pory"
 	.string "I love the slide the best!$"
 
 CedarForest_EventScript_Twins_1_Text_1:
-# 59 "data/maps/CedarForest/scripts.pory"
+# 67 "data/maps/CedarForest/scripts.pory"
 	.string "It's my fault we lost.$"
 
 CedarForest_EventScript_Twins_1_Text_2:
-# 60 "data/maps/CedarForest/scripts.pory"
+# 68 "data/maps/CedarForest/scripts.pory"
 	.string "You need at least two Pokémon to\n"
 	.string "battle us!$"
 
 CedarForest_EventScript_Twins_1_Text_3:
-# 61 "data/maps/CedarForest/scripts.pory"
+# 69 "data/maps/CedarForest/scripts.pory"
 	.string "I wish I didn't let my sis down.$"
 
 CedarForest_EventScript_Twins_2_Text_0:
-# 66 "data/maps/CedarForest/scripts.pory"
+# 74 "data/maps/CedarForest/scripts.pory"
 	.string "The sandbox is my favorite!$"
 
 CedarForest_EventScript_Twins_2_Text_1:
-# 67 "data/maps/CedarForest/scripts.pory"
+# 75 "data/maps/CedarForest/scripts.pory"
 	.string "We would have won if my sister was\n"
 	.string "better.$"
 
 CedarForest_EventScript_Twins_2_Text_2:
-# 69 "data/maps/CedarForest/scripts.pory"
+# 77 "data/maps/CedarForest/scripts.pory"
 	.string "I still love my sis even if she isn't very\n"
 	.string "good at battles.$"
 
-CedarForest_EventScript_Ranger_Text_0:
-# 74 "data/maps/CedarForest/scripts.pory"
+CedarForest_EventScript_Ranger_1_Text_0:
+# 82 "data/maps/CedarForest/scripts.pory"
 	.string "Don't you know it's dangerous to leave\n"
 	.string "the path?$"
 
-CedarForest_EventScript_Ranger_Text_1:
-# 75 "data/maps/CedarForest/scripts.pory"
+CedarForest_EventScript_Ranger_1_Text_1:
+# 83 "data/maps/CedarForest/scripts.pory"
 	.string "You are definitely strong enough to\n"
 	.string "explore the rest of the forest.$"
 
-CedarForest_EventScript_Ranger_Text_2:
-# 76 "data/maps/CedarForest/scripts.pory"
-	.string "There's an old cistern with rare\n"
-	.string "pokémon hidden somewhere in the\l"
-	.string "forest!$"
+CedarForest_EventScript_Ranger_1_Text_2:
+# 84 "data/maps/CedarForest/scripts.pory"
+	.string "Be careful. Sometimes strong pokemon\n"
+	.string "appear off the path.$"
+
+CedarForest_EventScript_Ranger_2_Text_0:
+# 89 "data/maps/CedarForest/scripts.pory"
+	.string "How did you find this place?$"
+
+CedarForest_EventScript_Ranger_2_Text_1:
+# 90 "data/maps/CedarForest/scripts.pory"
+	.string "There's an abandoned cistern deeper in\n"
+	.string "the forest.$"
+
+CedarForest_EventScript_Ranger_2_Text_2:
+# 91 "data/maps/CedarForest/scripts.pory"
+	.string "The pokemon deeper in the forest are\n"
+	.string "much stronger.$"
+
+CedarForest_EventScript_Lass_Text_0:
+# 96 "data/maps/CedarForest/scripts.pory"
+	.string "I just love how beautiful the river\n"
+	.string "looks here!$"
+
+CedarForest_EventScript_Lass_Text_1:
+# 97 "data/maps/CedarForest/scripts.pory"
+	.string "Don't you think the way it winds is just\n"
+	.string "entrancing?$"
+
+CedarForest_EventScript_Lass_Text_2:
+# 98 "data/maps/CedarForest/scripts.pory"
+	.string "I wish I could stay here all day.$"
+
+CedarForest_EventScript_Fisherman_Text_0:
+# 103 "data/maps/CedarForest/scripts.pory"
+	.string "There's nothing better than relaxing\n"
+	.string "with a rod and the water.$"
+
+CedarForest_EventScript_Fisherman_Text_1:
+# 104 "data/maps/CedarForest/scripts.pory"
+	.string "I don't mind losing, just means I can\n"
+	.string "get back to fishing faster.$"
+
+CedarForest_EventScript_Fisherman_Text_2:
+# 105 "data/maps/CedarForest/scripts.pory"
+	.string "I wonder what I'll fish up next?$"
 
 CedarForest_EventScript_RivalTrigger_1_Text_0:
-# 90 "data/maps/CedarForest/scripts.pory"
+# 119 "data/maps/CedarForest/scripts.pory"
 	.string "{PLAYER}! Took you long enough. Let's\n"
 	.string "see whose partner is stronger!$"
 
 CedarForest_EventScript_RivalTrigger_1_Text_1:
-# 100 "data/maps/CedarForest/scripts.pory"
+# 129 "data/maps/CedarForest/scripts.pory"
 	.string "Fine, you win this time. See you in Cedar\n"
 	.string "Rapids!$"
 
 CedarForest_Text_RivalDefeat::
-# 137 "data/maps/CedarForest/scripts.pory"
+# 166 "data/maps/CedarForest/scripts.pory"
 	.string "What?! I lost?$"

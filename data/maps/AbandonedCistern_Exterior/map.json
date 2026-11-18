@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "AbandonedCistern_Exterior_EventScript_BugCatcher",
+      "script": "AbandonedCistern_Exterior_EventScript_Bug_Catcher",
       "flag": "0"
     },
     {
@@ -172,7 +172,7 @@
       "y": 37,
       "elevation": 0,
       "item": "ITEM_NET_BALL",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_NET_BALL"
     },
     {
       "type": "hidden_item",
@@ -180,7 +180,7 @@
       "y": 6,
       "elevation": 0,
       "item": "ITEM_ZINC",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_ZINC"
     }
   ]
 }

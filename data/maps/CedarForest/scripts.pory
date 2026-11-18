@@ -40,15 +40,15 @@ script CedarForest_EventScript_Chasee {
 // NPC TRAINER BATTLE EVENTS
 //
 
-script CedarForest_EventScript_BugCatcher_1 {
-    trainerbattle_single(TRAINER_CEDAR_BUGCATCHER_1,
+script CedarForest_EventScript_Bug_Catcher_1 {
+    trainerbattle_single(TRAINER_CEDAR_BUG_CATCHER_1,
         format("Check out all the neat bug pok\emon I've caught!"),
         format("Aren't all my bug pok\emon neat!"))
     msgbox(format("Did you know bug Pok\emon evolve super fast?"), MSGBOX_AUTOCLOSE)
 }
 
-script CedarForest_EventScript_BugCatcher_2 {
-    trainerbattle_single(TRAINER_CEDAR_BUGCATCHER_2,
+script CedarForest_EventScript_Bug_Catcher_2 {
+    trainerbattle_single(TRAINER_CEDAR_BUG_CATCHER_2,
         format("Be Careful of my bugs poison!"),
         format("Poison Pok\emon are neat!"))
     msgbox(format("Maybe I should become a ninja, I hear they use poison type pok\emon?"), MSGBOX_AUTOCLOSE)

@@ -4,23 +4,23 @@
 #include "constants/battle_partner.h"
 #include "constants/opponents_frlg.h"
 
-#define TRAINER_NONE                          0
-#define TRAINER_CEDAR_BUGCATCHER              1
-#define TRAINER_CEDAR_PICNICKER               2
-#define TRAINER_CEDAR_TWINS                   3
-#define TRAINER_CEDAR_RANGER                  4
-#define TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA  5
-#define TRAINER_SLOT_6_NONE                   6
-#define TRAINER_SLOT_7_NONE                   7
-#define TRAINER_SLOT_8_NONE                   8
-#define TRAINER_SLOT_9_NONE                   9
-#define TRAINER_SLOT_10_NONE                 10
-#define TRAINER_SLOT_11_NONE                 11
-#define TRAINER_SLOT_12_NONE                 12
-#define TRAINER_SLOT_13_NONE                 13
-#define TRAINER_SLOT_14_NONE                 14
-#define TRAINER_SLOT_15_NONE                 15
-#define TRAINER_SLOT_16_NONE                 16
+#define TRAINER_NONE                         0
+#define TRAINER_CEDAR_LASS                   1
+#define TRAINER_CEDAR_PICNICKER              2
+#define TRAINER_CEDAR_FISHERMAN              3
+#define TRAINER_CEDAR_TWINS                  4  
+#define TRAINER_CEDAR_BUG_CATCHER_1          5
+#define TRAINER_CEDAR_BUG_CATCHER_2          6
+#define TRAINER_CEDAR_RANGER_1               7
+#define TRAINER_CEDAR_RANGER_2               8
+#define TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA 9
+#define TRAINER_RIVAL_CEDAR_FOREST_TEPIG     10
+#define TRAINER_RIVAL_CEDAR_FOREST_MUDKIP    11
+#define TRAINER_CISTERN_EXTERIOR_BUG_CATCHER 12
+#define TRAINER_CISTERN_EXTERIOR_HIKER       13
+#define TRAINER_CISTERN_EXTERIOR_COLLECTOR   14
+#define TRAINER_CISTERN_EXTERIOR_RANGER_1    15
+#define TRAINER_CISTERN_EXTERIOR_RANGER_2    16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19

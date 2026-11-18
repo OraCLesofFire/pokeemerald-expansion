@@ -77,7 +77,7 @@ Comments can be added as C comment blocks
 
 /*Ambition Trainers*/
 
-=== TRAINER_CEDAR_BUGCATCHER_1 ===
+=== TRAINER_CEDAR_BUG_CATCHER_1 ===
 Name: ROSS
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -102,7 +102,7 @@ Metapod
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CEDAR_BUGCATCHER_2 ===
+=== TRAINER_CEDAR_BUG_CATCHER_2 ===
 Name: ROSS
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -204,7 +204,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kriketot
+Kricketot
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -241,18 +241,58 @@ Double Battle: No
 AI: Check Bad Move
 
 Pidove
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Psyduck
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Chikorita
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CISTERN_EXTERIOR_BUGCATCHER ===
+Psyduck
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Chikorita
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RIVAL_CEDAR_FOREST_TEPIG ===
+Name: Rival
+Class: Rival
+Pic: Brendan
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Pidove
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Morelull
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tepig
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RIVAL_CEDAR_FOREST_MUDKIP ===
+Name: Rival
+Class: Rival
+Pic: Brendan
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Pidove
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Growlithe
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mudkip
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CISTERN_EXTERIOR_BUG_CATCHER ===
 Name: HOLLY
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -287,10 +327,10 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Rolycoly
-level 7:
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CISTERN_RANGER_1 ===
+=== TRAINER_CISTERN_EXTERIOR_RANGER_1 ===
 Name: HOLLY
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
@@ -310,7 +350,7 @@ Slowpoke
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CISTERN_RANGER_2 ===
+=== TRAINER_CISTERN_EXTERIOR_RANGER_2 ===
 Name: HOLLY
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
@@ -319,7 +359,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Morelull
-Level 6:
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Chewtle
@@ -331,7 +371,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tympole:
-Level 8:
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_COLLECTOR ===
@@ -343,7 +383,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod
-Level 2:
+Level: 2
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wimpod:
@@ -355,94 +395,6 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_6_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_7_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_8_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_9_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_10_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_11_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_12_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_13_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_14_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_15_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== TRAINER_SLOT_16_NONE ===
 Name:
 Class: Pkmn Trainer 1
 Pic: Hiker
