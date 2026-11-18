@@ -103,7 +103,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_BUG_CATCHER_2 ===
-Name: ROSS
+Name: Mason
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -161,7 +161,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_RANGER_1 ===
-Name: HOLLY
+Name: Megan
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -181,7 +181,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_RANGER_2 ===
-Name: HOLLY
+Name: Heather
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -197,7 +197,7 @@ Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_LASS ===
-Name: HOLLY
+Name: Jacey
 Class: Lass
 Pic: Lass
 Music: Female
@@ -213,7 +213,7 @@ Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_FISHERMAN ===
-Name: HOLLY
+Name: Gary
 Class: Fisherman
 Pic: Fisherman
 Music: Hiker
@@ -293,7 +293,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_BUG_CATCHER ===
-Name: HOLLY
+Name: Brooks
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -310,7 +310,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_HIKER ===
-Name: HOLLY
+Name: Doug
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -331,7 +331,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_RANGER_1 ===
-Name: HOLLY
+Name: Brenda
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -351,7 +351,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_RANGER_2 ===
-Name: HOLLY
+Name: Shelly
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -375,7 +375,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_COLLECTOR ===
-Name: HOLLY
+Name: Todd
 Class: Collector
 Pic: TRAINER_PIC_COLLECTOR
 Music: Suspicious

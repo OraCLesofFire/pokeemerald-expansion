@@ -1746,3 +1746,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/AbandonedCistern_Interior/scripts.inc"
 
 	.include "data/maps/AbandonedCistern_B1F/scripts.inc"
+
+	.include "data/maps/CedarCrossing/scripts.inc"
+
+	.include "data/maps/Town2/scripts.inc"

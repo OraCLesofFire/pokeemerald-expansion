@@ -14,8 +14,8 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_CEDAR_FOREST",
-      "offset": -32,
+      "map": "MAP_ROUTE101",
+      "offset": 0,
       "direction": "up"
     }
   ],
@@ -149,6 +149,13 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TOWN2",
       "dest_warp_id": "0"
     }
   ],

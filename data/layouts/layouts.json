@@ -9353,6 +9353,26 @@
       "secondary_tileset": "gTileset_AbandonedCistern",
       "border_filepath": "data/layouts/AbandonedCistern_B1F/border.bin",
       "blockdata_filepath": "data/layouts/AbandonedCistern_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CEDAR_CROSSING",
+      "name": "Cedar_Crossing_Layout",
+      "width": 44,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Cedar_Crossing/border.bin",
+      "blockdata_filepath": "data/layouts/Cedar_Crossing/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN2",
+      "name": "Town2_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Town2/border.bin",
+      "blockdata_filepath": "data/layouts/Town2/map.bin"
     }
   ]
 }
