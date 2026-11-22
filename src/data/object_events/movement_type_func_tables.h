@@ -391,6 +391,22 @@ u8 (*const gMovementTypeFuncs_WalkSequenceRightDownLeftUp[])(struct ObjectEvent 
 
 const enum Direction gRightDownLeftUpDirections[] = {DIR_EAST, DIR_SOUTH, DIR_WEST, DIR_NORTH};
 
+u8 (*const gMovementTypeFuncs_WalkFastLoopLeftUpRightDown[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementType_WalkFastLoop_Step0,
+    MovementType_WalkFastLoopLeftUpRightDown_Step1,
+    MovementType_WalkSequence_Step2,
+};
+
+const enum Direction gWalkFastLoopLeftUpRightDownDirections[] = {DIR_WEST, DIR_WEST, DIR_NORTH, DIR_NORTH, DIR_EAST, DIR_EAST, DIR_SOUTH, DIR_SOUTH};
+
+u8 (*const gMovementTypeFuncs_WalkFastLoopDownLeftUpRight[])(struct ObjectEvent *, struct Sprite *) = {
+    MovementType_WalkFastLoop_Step0,
+    MovementType_WalkFastLoopDownLeftUpRight_Step1,
+    MovementType_WalkSequence_Step2,
+};
+
+const enum Direction gWalkFastLoopDownLeftUpRightDirections[] = {DIR_SOUTH, DIR_SOUTH, DIR_WEST, DIR_WEST, DIR_NORTH, DIR_NORTH, DIR_EAST, DIR_EAST};
+
 u8 (*const gMovementTypeFuncs_CopyPlayer[])(struct ObjectEvent *, struct Sprite *) = {
     MovementType_CopyPlayer_Step0,
     MovementType_CopyPlayer_Step1,
