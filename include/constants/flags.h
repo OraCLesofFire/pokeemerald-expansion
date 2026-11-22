@@ -51,8 +51,10 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define FLAG_PLAYER_VISITED_MOM         0x20
+#define FLAG_GYM_GUIDE_GIFT_GIVEN       0x21
+// #define FLAG_UNUSED_0x020    0x20 // Unused Flag
+// #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
@@ -663,27 +665,40 @@
 #define FLAG_HIDDEN_ITEM_NAVEL_ROCK_TOP_SACRED_ASH           (FLAG_HIDDEN_ITEMS_START + 0x6D)
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
-#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_POTION                 (FLAG_HIDDEN_ITEMS_START + 0x70)
-#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_REVIVE                 (FLAG_HIDDEN_ITEMS_START + 0x71)
-#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_POKEBALL               (FLAG_HIDDEN_ITEMS_START + 0x72)
-#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_ZINC               (FLAG_HIDDEN_ITEMS_START + 0x73)
-#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_NET_BALL           (FLAG_HIDDEN_ITEMS_START + 0x74)
+
+#define FLAG_HIDDEN_ITEM_CEDAR_CROSSING_BIG_MUSHROOM         (FLAG_HIDDEN_ITEMS_START + 0x70)
+#define FLAG_HIDDEN_ITEM_CEDAR_CROSSING_X_ATTACK             (FLAG_HIDDEN_ITEMS_START + 0x71)
+#define FLAG_HIDDEN_ITEM_CEDAR_CROSSING_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x72)
+#define FLAG_HIDDEN_ITEM_CEDAR_CROSSING_FRESH_WATER          (FLAG_HIDDEN_ITEMS_START + 0x73)
+#define FLAG_HIDDEN_ITEM_TOWN2_HONEY                         (FLAG_HIDDEN_ITEMS_START + 0x74)
+#define FLAG_HIDDEN_ITEM_TOWN2_PEARL                         (FLAG_HIDDEN_ITEMS_START + 0x75)
+#define FLAG_HIDDEN_ITEM_TOWN2_X_DEFEND                      (FLAG_HIDDEN_ITEMS_START + 0x76)
+#define FLAG_HIDDEN_ITEM_TOWN2_FULL_HEAL                     (FLAG_HIDDEN_ITEMS_START + 0x77)
+#define FLAG_HIDDEN_ITEM_TOWN2_ETHER                         (FLAG_HIDDEN_ITEMS_START + 0x78)
+#define FLAG_HIDDEN_ITEM_TOWN2_RARE_CANDY                    (FLAG_HIDDEN_ITEMS_START + 0x79)
+#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_REVIVE                 (FLAG_HIDDEN_ITEMS_START + 0x7A)
+#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_GREAT_BALL             (FLAG_HIDDEN_ITEMS_START + 0x7B)
+#define FLAG_HIDDEN_ITEM_CEDAR_FOREST_X_SPEED                (FLAG_HIDDEN_ITEMS_START + 0x7C)
+#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_NET_BALL           (FLAG_HIDDEN_ITEMS_START + 0x7D)
+#define FLAG_HIDDEN_ITEM_CISTERN_EXTERIOR_X_SPECIAL_DEFENSE  (FLAG_HIDDEN_ITEMS_START + 0x7E)
+
+
 
 // #define FLAG_UNUSED_0x264  0x264 // Unused Flag
 // #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 // #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 // #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 // #define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+// #define FLAG_UNUSED_0x269  0x269 // Unused Flag
+// #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
+// #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+// #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+// #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+// #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
+// #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
+// #define FLAG_UNUSED_0x270  0x270 // Unused Flag
+// #define FLAG_UNUSED_0x271  0x271 // Unused Flag
+// #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
@@ -1226,30 +1241,41 @@
 #define FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE                       0x490
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
-#define FLAG_ITEM_CEDAR_FOREST_POKEBALL                             0x493
-#define FLAG_ITEM_CEDAR_FOREST_TM_STRUGGLE_BUG                      0x494
-#define FLAG_ITEM_CEDAR_FOREST_HEART_SCALE                          0x495
-#define FLAG_HIDE_CEDAR_FOREST_RIVAL                                0x496
-#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_SUPER_POTION           0x497
-#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_ETHER                  0x498
 
+#define FLAG_ITEM_CEDAR_CROSSING_POKE_BALL                          0x493
+#define FLAG_ITEM_CEDAR_CROSSING_TINY_MUSHROOM_1                    0x494
+#define FLAG_ITEM_CEDAR_CROSSING_TINY_MUSHROOM_2                    0x495
+#define FLAG_ITEM_CEDAR_CROSSING_POTION                             0x496
+#define FLAG_ITEM_CEDAR_CROSSING_PROTEIN                            0x497
+#define FLAG_ITEM_TOWN2_POKE_BALL                                   0x498
+#define FLAG_ITEM_TOWN2_GREAT_BALL                                  0x499
+#define FLAG_ITEM_PLAYER_HOUSE_RARE_CANDY                           0x49A
+#define FLAG_ITEM_CEDAR_FOREST_POKEBALL                             0x49B
+#define FLAG_ITEM_CEDAR_FOREST_POTION                               0x49C
+#define FLAG_ITEM_CEDAR_FOREST_REPEL                                0x49D
+#define FLAG_ITEM_CEDAR_FOREST_TM_STRUGGLE_BUG                      0x49E
+#define FLAG_ITEM_CEDAR_FOREST_HEART_SCALE                          0x49F
+#define FLAG_HIDE_CEDAR_FOREST_RIVAL                                0x4A0
+#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_SUPER_POTION           0x4A1
+#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_ETHER                  0x4A2
+#define FLAG_ITEM_ABANDONED_CISTERN_EXTERIOR_ANTIDOTE               0x4A3
 // #define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
 // #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 // #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 // #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 // #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 // #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
+// #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
+// #define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+// #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
+// #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+// #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
+// #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+// #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+// #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+// #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
+// #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
+// #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
@@ -1337,7 +1363,8 @@
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
-#define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
+#define FLAG_DEFEATED_GYM1                                          0x4F9
+// #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
 #define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB

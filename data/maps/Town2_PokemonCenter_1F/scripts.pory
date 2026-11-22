@@ -1,0 +1,25 @@
+mapscripts Town2_PokemonCenter_1F_MapScripts {}
+
+//
+// NPC TALK EVENTS
+//
+
+script Town2_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, LOCALID_TOWN2_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+}
+
+script Town2_PokemonCenter_1F_EventScript_AromaLady {
+    msgbox(format("I just love our garden. It makes the town smell so nice in the spring!"), MSGBOX_NPC)
+}
+
+script Town2_PokemonCenter_1F_EventScript_Gentleman {
+    msgbox(format("Make sure you heal your pok\emon before heading to Cedar Rapids. Route 2 can be dangerous if you aren't prepared."), MSGBOX_NPC)
+}
+
+script Town2_PokemonCenter_1F_EventScript_Cooltrainer {
+    msgbox(format("I heard that somebody in this town gives great advice for beating the gym challenge."), MSGBOX_NPC)
+}

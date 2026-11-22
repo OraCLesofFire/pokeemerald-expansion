@@ -1,0 +1,13 @@
+mapscripts Town2_House1_MapScripts {}
+
+script Town2_PokemonCenter_1F_EventScript_Dad {
+    msgbox(format("A small town like this is perfect for raising children."), MSGBOX_NPC)
+}
+
+script Town2_PokemonCenter_1F_EventScript_Girl {
+    msgbox(format("My dad said they accidentally built the bridge to route 1 upside down.\p That's why the water runs over it!."), MSGBOX_NPC)
+}
+
+script Town2_PokemonCenter_1F_EventScript_Mom {
+    msgbox(format("I love my kids, but my son keeps wandering around the river. He really seems to love pok\emon, but I'm afraid he'll get hurt."), MSGBOX_NPC)
+}

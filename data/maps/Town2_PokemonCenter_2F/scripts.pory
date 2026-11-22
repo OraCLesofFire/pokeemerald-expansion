@@ -1,0 +1,37 @@
+mapscripts Town2_PokemonCenter_2F_MapScripts {}
+
+script Town2_PokemonCenter_2F_EventScript_Worker {
+    msgbox(format("We're still not quite sure what to do with this place."), MSGBOX_NPC)
+}
+
+script Town2_PokemonCenter_2F_EventScript_Vigoroth_1 {
+    lock
+	faceplayer
+	waitse
+	playmoncry(SPECIES_VIGOROTH, CRY_MODE_NORMAL)
+	msgbox("Fugiiiiih!", MSGBOX_DEFAULT)
+	waitmoncry
+	release
+	end
+}
+
+script Town2_PokemonCenter_2F_EventScript_Vigoroth_2 {
+    lock
+	faceplayer
+	waitse
+	playmoncry(SPECIES_VIGOROTH, CRY_MODE_NORMAL)
+	msgbox("Huggoh, uggo uggo…", MSGBOX_DEFAULT)
+	waitmoncry
+	release
+	end
+}
+script Town2_PokemonCenter_2F_EventScript_Vigoroth_3 {
+    lock
+	faceplayer
+	waitse
+	playmoncry(SPECIES_VIGOROTH, CRY_MODE_NORMAL)
+	msgbox("Groh, Ogghi, Guhh?", MSGBOX_DEFAULT)
+	waitmoncry
+	release
+	end
+}

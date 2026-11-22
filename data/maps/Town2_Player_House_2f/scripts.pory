@@ -1,0 +1,5 @@
+mapscripts Town2_Player_House_2f_MapScripts {}
+
+script Town2_Player_House_2F_EventScript_SwabluPlush {
+    msgbox(format("It's a Swablu plush, you used to cuddle up with them at night when you were little. It's still as soft as you remember!"), MSGBOX_DEFAULT)
+}

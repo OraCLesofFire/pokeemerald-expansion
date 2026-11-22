@@ -1,1 +1,110 @@
 mapscripts Town2_MapScripts {}
+
+//
+// SIGN EVENTS
+//
+
+script Town2_EventScript_TrailSign {
+    msgbox("Town 2\p
+           {UP_ARROW} Cedar Forest
+           {DOWN_ARROW} Cedar Crossing", MSGBOX_SIGN)
+}
+
+script Town2_EventScript_TownSign {
+    msgbox(format("Town 2: Where journeys begin!"), MSGBOX_SIGN)
+}
+
+script Town2_EventScript_PlayersHouseSign {
+    msgbox(format("{PLAYER}'s house."), MSGBOX_SIGN)
+}
+
+script Town2_EventScript_GardenSign {
+    msgbox(format("The flowers are here for everyone to enjoy!"), MSGBOX_SIGN)
+}
+
+//
+// NPC TALK EVENTS
+//
+
+script Town2_EventScript_AromaLady_Trigger {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_TOWN2_AROMALADY, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(LOCALID_TOWN2_AROMALADY, moves(face_player))
+    waitmovement(0)
+    msgbox(format("Please don't step on the flowers."), MSGBOX_DEFAULT)
+    setvar(VAR_TEMP_1, 1)
+    releaseall
+}
+
+script Town2_EventScript_AromaLady {
+    msgbox(format("Please be careful around the flowers"), MSGBOX_NPC)
+}
+
+script Town2_EventScript_Hiker {
+    msgbox(format("The whole river has to go past that rock over there. I bet some super rare item is stuck there!"), MSGBOX_NPC)
+}
+
+script Town2_EventScript_Boy {
+    msgbox(format("I love playing in the creek. I can find all kinds of different pok\emon here!"), MSGBOX_NPC)
+}
+
+script Town2_EventScript_FatMan {
+    msgbox(format("There's nothing like taking a walk in the fresh air."), MSGBOX_NPC)
+}
+
+script Town2_EventScript_VisitMomTrigger_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Town2_VisitMom_Movement_Step_Back)
+    waitmovement(0)
+    applymovement(LOCALID_TOWN2_RANGER, moves(
+        walk_right
+        face_down))
+    waitmovement(0)
+    call(Town2_EventScript_Ranger_VisitMomTrigger)
+    applymovement(LOCALID_TOWN2_RANGER, moves(
+        walk_left
+        face_down
+        ))
+    waitmovement(0)
+    releaseall
+}
+
+script Town2_EventScript_VisitMomTrigger_2 {
+    lockall
+    applymovement(LOCALID_TOWN2_RANGER, moves(walk_right))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, Town2_VisitMom_Movement_Step_Back)
+    waitmovement(0)
+    applymovement(LOCALID_TOWN2_RANGER, moves(
+        walk_right
+        face_down))
+    waitmovement(0)
+    call(Town2_EventScript_Ranger_VisitMomTrigger)
+    applymovement(LOCALID_TOWN2_RANGER, moves(
+        walk_left
+        walk_left
+        face_down))
+    waitmovement(0)
+    releaseall
+}
+
+movement Town2_VisitMom_Movement_Step_Back {
+    walk_down
+    face_up
+}
+
+script Town2_EventScript_Ranger_VisitMomTrigger {
+    msgbox(format("Aren't you {PLAYER}? You should visit your mom before heading out on a journey."), MSGBOX_DEFAULT)
+}
+
+script Town2_EventScript_Ranger {
+    if (flag(FLAG_PLAYER_VISITED_MOM)){
+        msgbox(format("Make sure you stay on the path."), MSGBOX_NPC)
+    }
+    else {
+        msgbox(format("Aren't you {PLAYER}? You should visit your mom before heading out on a journey."), MSGBOX_NPC)
+    }
+}
+

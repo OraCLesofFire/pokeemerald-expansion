@@ -40,6 +40,20 @@ script CedarForest_EventScript_Chasee {
 // NPC TRAINER BATTLE EVENTS
 //
 
+script CedarForest_EventScript_Youngster_1 {
+    trainerbattle_single(TRAINER_CEDAR_YOUNGSTER_1,
+        format("I just caught my pokemon today!"),
+        format("I actually caught one last night."))
+    msgbox(format("Did you know some pokemon only come out at night?"), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_EventScript_Youngster_2 {
+    trainerbattle_single(TRAINER_CEDAR_YOUNGSTER_2,
+        format("Beware of my bird pokemon!"),
+        format("Flying type moves are strong against grass pokemon."))
+    msgbox(format("Having only 1 type of pokemon sure makes battles more difficult."), MSGBOX_AUTOCLOSE)
+}
+
 script CedarForest_EventScript_Bug_Catcher_1 {
     trainerbattle_single(TRAINER_CEDAR_BUG_CATCHER_1,
         format("Check out all the neat bug pok\emon I've caught!"),
@@ -52,13 +66,6 @@ script CedarForest_EventScript_Bug_Catcher_2 {
         format("Be Careful of my bugs poison!"),
         format("Poison Pok\emon are neat!"))
     msgbox(format("Maybe I should become a ninja, I hear they use poison type pok\emon?"), MSGBOX_AUTOCLOSE)
-}
-
-script CedarForest_EventScript_Picnicker {
-    trainerbattle_single(TRAINER_CEDAR_PICNICKER,
-        format("The forest is so beautiful this time of year."),
-        format("This forest is a lot less beautiful without my pok\emon."))
-    msgbox(format("I just love the way the river winds through the forest!"), MSGBOX_AUTOCLOSE)
 }
 
 script CedarForest_EventScript_Twins_1 {
@@ -77,6 +84,13 @@ script CedarForest_EventScript_Twins_2 {
     msgbox(format("I still love my sis even if she isn't very good at battles."), MSGBOX_AUTOCLOSE)
 }
 
+script CedarForest_EventScript_Lass {
+    trainerbattle_single(TRAINER_CEDAR_LASS,
+        format("The river is so pretty here."),
+        format("I wish I could spend more time by the river."))
+    msgbox(format("Don't you think this would be the perfect place for a picnick??"), MSGBOX_AUTOCLOSE)
+}
+
 script CedarForest_EventScript_Ranger_1 {
     trainerbattle_single(TRAINER_CEDAR_RANGER_1,
     format("Don't you know it's dangerous to leave the path?"),
@@ -91,18 +105,45 @@ script CedarForest_EventScript_Ranger_2 {
     msgbox(format("The pokemon deeper in the forest are much stronger."), MSGBOX_AUTOCLOSE)
 }
 
-script CedarForest_EventScript_Lass {
-    trainerbattle_single(TRAINER_CEDAR_LASS,
-    format("I just love how beautiful the river looks here!"),
-    format("Don't you think the way it winds is just entrancing?"))
-    msgbox(format("I wish I could stay here all day."), MSGBOX_AUTOCLOSE)
-}
-
 script CedarForest_EventScript_Fisherman {
     trainerbattle_single(TRAINER_CEDAR_FISHERMAN,
     format("There's nothing better than relaxing with a rod and the water."),
     format("I don't mind losing, just means I can get back to fishing faster."))
     msgbox(format("I wonder what I'll fish up next?"), MSGBOX_AUTOCLOSE)
+}
+
+script CedarForest_Ace_CountDefeated {
+    setvar(VAR_TEMP_1, 9)
+    if (defeated(TRAINER_CEDAR_BUG_YOUNGSTER_1)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_BUG_YOUNGSTER_2)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_BUG_CATCHER_1)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_BUG_CATCHER_2)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_LASS)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_RANGER_1)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_RANGER_2)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_FISHERMAN)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_TWINS)) { subvar(VAR_TEMP_1, 1) }
+}
+
+script CedarForest_EventScript_Ace {
+    call(CedarForest_Ace_CountDefeated)
+    if (defeated(TRAINER_CEDAR_ACE)) {
+        msgbox(format("I adopted my pokemon from a lady in Cedar Rapids?"), MSGBOX_NPC)
+    }
+    else {
+        switch (var(VAR_TEMP_1)) {
+            case 9:
+                msgbox(format("You don't seem very strong. Come back when you've beat every trainer on this route."), MSGBOX_NPC)
+            case 0:
+                trainerbattle_single(TRAINER_CEDAR_ACE,
+                format("You've beat every other trainer on this route. Show me what you've got!"),
+                format("Wow you are strong. I'll give you this silk scarf to help you on your way."))
+                msgbox(format("I adopted my pokemon from a lady in Cedar Rapids."), MSGBOX_AUTOCLOSE)
+                giveitem(ITEM_SILK_SCARF)
+            dfault:
+                msgbox(format("You still need to get stronger. There is still {VAR_TEMP_1} more trainers on this route for you to beat."), MSGBOX_NPC)
+        }
+    }
 }
 
 //

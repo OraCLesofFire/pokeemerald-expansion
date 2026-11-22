@@ -9373,6 +9373,46 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Town2/border.bin",
       "blockdata_filepath": "data/layouts/Town2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN2_HOUSE1",
+      "name": "Town2_House1_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Town2_House1/border.bin",
+      "blockdata_filepath": "data/layouts/Town2_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN2_HOUSE2",
+      "name": "Town2_House2_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Town2_House2/border.bin",
+      "blockdata_filepath": "data/layouts/Town2_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN2_PLAYER_HOUSE",
+      "name": "Town2_Player_House_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Town2_Player_House/border.bin",
+      "blockdata_filepath": "data/layouts/Town2_Player_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOWN2_PLAYER_HOUSE_2F",
+      "name": "Town2_Player_House_2f_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Town2_Player_House_2f/border.bin",
+      "blockdata_filepath": "data/layouts/Town2_Player_House_2f/map.bin"
     }
   ]
 }

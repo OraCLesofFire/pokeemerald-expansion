@@ -1,1 +1,28 @@
 mapscripts CedarCrossing_MapScripts {}
+
+script CedarCrossing_EventScript_TrailSign {
+    msgbox("Cedar Crossing\p
+           {LEFT_ARROW} Town 1
+           {RIGHT_ARROW} Town 2", MSGBOX_SIGN)
+}
+
+//
+// NPC TALK EVENTS
+//
+
+script CedarCrossing_EventScript_MushroomHunter {
+    msgbox(format("I'm looking for mushrooms. I heard that some of them are even hidden."), MSGBOX_NPC)
+    }
+
+script CedarCrossing_EventScript_LedgeJumper {
+    msgbox(format("Did you know you can jump ledges like this? Watch!"), MSGBOX_NPC)
+}
+
+script CedarCrossing_EventScript_BugCatcher {
+    msgbox(format("I heard that there's a bug pok\emon on this route, but I can't find it."), MSGBOX_NPC)
+}
+
+script CedarCrossing_EventScript_Youngster {
+    msgbox(format("If you keep going west, you'll end up in Town2 after crossing Cedar River."), MSGBOX_NPC)
+}
+

@@ -1,0 +1,12 @@
+mapscripts Town2_Player_House_MapScripts {}
+
+script Town2_Player_House_EventScript_Mom {
+    if (flag(FLAG_PLAYER_VISITED_MOM)) {
+        msgbox(format("Feel free to come back and visit anytime."), MSGBOX_NPC)
+    }
+    else {
+        msgbox(format("Oh! {PLAYER}, you're home! How's school?\p The gym challenge?\N You know your grandfather was the old champion before he retired. I bet he would have some good advice./p You should go visit him, he lives right next to the gym too in Town 4 too!"), MSGBOX_NPC)
+        setflag(FLAG_PLAYER_VISITED_MOM)
+        setvar(VAR_TOWN2_STATE, 1)
+    }
+}

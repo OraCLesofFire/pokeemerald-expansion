@@ -1750,3 +1750,17 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CedarCrossing/scripts.inc"
 
 	.include "data/maps/Town2/scripts.inc"
+
+	.include "data/maps/Town2_House1/scripts.inc"
+
+	.include "data/maps/Town2_House2/scripts.inc"
+
+	.include "data/maps/Town2_Player_House/scripts.inc"
+
+	.include "data/maps/Town2_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/Town2_Mart/scripts.inc"
+
+	.include "data/maps/Town2_Player_House_2f/scripts.inc"
+
+	.include "data/maps/Town2_PokemonCenter_2F/scripts.inc"

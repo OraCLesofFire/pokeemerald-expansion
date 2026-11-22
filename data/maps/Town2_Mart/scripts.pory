@@ -1,0 +1,34 @@
+mapscripts Town2_Mart_MapScripts {}
+
+//
+// NPC TALK EVENTS
+//
+
+script Town2_Mart_EventScript_Lass {
+    msgbox(format("Hmm. I'm not sure which I should get more of, Pokeballs or Potions?"), MSGBOX_NPC)
+}
+
+script Town2_Mart_EventScript_Ranger {
+    msgbox(format("Make sure you pick up some potions and antidotes. The route ahead is quite long."), MSGBOX_NPC)
+}
+
+//
+// Mart Scripts
+//
+
+script Town2_Mart_EventScript_Mart {
+	lock
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(MyMartItems)
+	msgbox(gText_PleaseComeAgain)
+	release
+}
+
+mart MyMartItems {
+	ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+}
+

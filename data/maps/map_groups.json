@@ -136,7 +136,14 @@
     "Underwater_Route125",
     "CedarForest",
     "CedarCrossing",
-    "Town2"
+    "Town2",
+    "Town2_PokemonCenter_1F",
+    "Town2_Mart",
+    "Town2_House1",
+    "Town2_House2",
+    "Town2_Player_House",
+    "Town2_Player_House_2f",
+    "Town2_PokemonCenter_2F"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

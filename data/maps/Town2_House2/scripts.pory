@@ -1,0 +1,16 @@
+mapscripts Town2_House2_MapScripts {}
+
+script Town2_PokemonCenter_1F_EventScript_Gym_Guy {
+    if (flag(FLAG_GYM_GUIDE_GIFT_GIVEN)) {
+        msgbox(format("Go Get 'em Tiger!"), MSGBOX_NPC)
+    }
+    elif (!flag(FLAG_DEFEATED_GYM1)) {
+        msgbox(format("What's up champ in the makin'?\p Who am I? I'm the gym guide!\N If you ever need help just ask.\p How about a gift to give you a head start?"), MSGBOX_NPC)
+        giveitem(ITEM_TM_RETURN)
+        setflag(FLAG_GYM_GUIDE_GIFT_GIVEN)
+        if (flag(FLAG_DEFEATED_GYM1)) {
+            setvar(VAR_TOWN2_STATE, 1)
+            clearflag(FLAG_GYM_GUIDE_GIFT_GIVEN)
+        }
+    }
+}
