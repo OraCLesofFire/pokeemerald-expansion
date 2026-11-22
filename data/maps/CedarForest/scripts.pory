@@ -140,8 +140,22 @@ script CedarForest_EventScript_Ace {
                 format("Wow you are strong. I'll give you this silk scarf to help you on your way."))
                 msgbox(format("I adopted my pokemon from a lady in Cedar Rapids."), MSGBOX_AUTOCLOSE)
                 giveitem(ITEM_SILK_SCARF)
-            dfault:
-                msgbox(format("You still need to get stronger. There is still {VAR_TEMP_1} more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 8:
+                msgbox(format("You still need to get stronger. There are still 8 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 7:
+                msgbox(format("You still need to get stronger. There are still 7 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 6:
+                msgbox(format("You still need to get stronger. There are still 6 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 5:
+                msgbox(format("You still need to get stronger. There are still 5 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 4:
+                msgbox(format("You still need to get stronger. There are still 4 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 3:
+                msgbox(format("You still need to get stronger. There are still 3 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 2:
+                msgbox(format("You still need to get stronger. There are still 2 more trainers on this route for you to beat."), MSGBOX_NPC)
+            case 1:
+                msgbox(format("You still need to get stronger. There is still 1 more trainer on this route for you to beat."), MSGBOX_NPC)
         }
     }
 }

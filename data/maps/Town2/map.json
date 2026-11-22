@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "local_id": "LOCAL_D_TOWN2_AROMALADY",
+      "local_id": "LOCALID_TOWN2_AROMALADY",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 26,
       "y": 15,
