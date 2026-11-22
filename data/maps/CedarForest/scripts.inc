@@ -122,11 +122,11 @@ CedarForest_Ace_CountDefeated::
 # 116 "data/maps/CedarForest/scripts.pory"
 	setvar VAR_TEMP_1, 9
 # 117 "data/maps/CedarForest/scripts.pory"
-	checktrainerflag TRAINER_CEDAR_BUG_YOUNGSTER_1
+	checktrainerflag TRAINER_CEDAR_YOUNGSTER_1
 	goto_if 1, CedarForest_Ace_CountDefeated_2
 CedarForest_Ace_CountDefeated_1:
 # 118 "data/maps/CedarForest/scripts.pory"
-	checktrainerflag TRAINER_CEDAR_BUG_YOUNGSTER_2
+	checktrainerflag TRAINER_CEDAR_YOUNGSTER_2
 	goto_if 1, CedarForest_Ace_CountDefeated_5
 CedarForest_Ace_CountDefeated_4:
 # 119 "data/maps/CedarForest/scripts.pory"
