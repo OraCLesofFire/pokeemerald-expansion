@@ -349,6 +349,8 @@ static void (*const sMovementTypeCallbacks[])(struct Sprite *) =
     [MOVEMENT_TYPE_WATCH_PLAYER_OWE] = MovementType_OverworldWildEncounter_WatchPlayer,
     [MOVEMENT_TYPE_APPROACH_PLAYER_OWE] = MovementType_OverworldWildEncounter_ApproachPlayer,
     [MOVEMENT_TYPE_DESPAWN_OWE] = MovementType_OverworldWildEncounter_Despawn,
+    [MOVEMENT_TYPE_WALK_FAST_LOOP_LEFT_UP_RIGHT_DOWN] = MovementType_WalkFastLoopLeftUpRightDown,
+    [MOVEMENT_TYPE_WALK_FAST_LOOP_DOWN_LEFT_UP_RIGHT] = MovementType_WalkFastLoopDownLeftUpRight,
 };
 
 static const bool8 sMovementTypeHasRange[NUM_MOVEMENT_TYPES] = {
@@ -484,6 +486,8 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
     [MOVEMENT_TYPE_WATCH_PLAYER_OWE] = DIR_SOUTH,
     [MOVEMENT_TYPE_APPROACH_PLAYER_OWE] = DIR_SOUTH,
     [MOVEMENT_TYPE_DESPAWN_OWE] = DIR_SOUTH,
+    [MOVEMENT_TYPE_WALK_FAST_LOOP_LEFT_UP_RIGHT_DOWN] = DIR_WEST,
+    [MOVEMENT_TYPE_WALK_FAST_LOOP_DOWN_LEFT_UP_RIGHT] = DIR_SOUTH,
 };
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -5372,6 +5376,75 @@ u8 MovementType_WalkSequenceRightDownLeftUp_Step1(struct ObjectEvent *objectEven
         objectEvent->directionSequenceIndex = 3;
 
     return MoveNextDirectionInSequence(objectEvent, sprite, directions);
+}
+
+// Walk fast loop: fast-walks around a 3x3-tile square forever (8 steps per lap).
+// The next step is worked out from where the object is standing on the loop,
+// so it can never drift out of sync. If something (e.g. the player) is in the
+// way, it jogs in place and tries again until the path is clear.
+#define WALK_FAST_LOOP_STEPS 8
+
+bool8 MovementType_WalkFastLoop_Step0(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    ClearObjectEventMovement(objectEvent, sprite);
+    // The loop's size is fixed, so ignore any movement range set in Porymap.
+    objectEvent->range.rangeX = 0;
+    objectEvent->range.rangeY = 0;
+    sprite->sTypeFuncId = 1;
+    return TRUE;
+}
+
+static bool8 MoveAlongWalkFastLoop(struct ObjectEvent *objectEvent, struct Sprite *sprite, const enum Direction *route)
+{
+    s16 x = objectEvent->initialCoords.x;
+    s16 y = objectEvent->initialCoords.y;
+    enum Direction direction = DIR_NONE;
+    u8 movementActionId;
+    u32 i;
+
+    // Find which tile of the loop we're on; the route says which way to go from there.
+    for (i = 0; i < WALK_FAST_LOOP_STEPS; i++)
+    {
+        if (x == objectEvent->currentCoords.x && y == objectEvent->currentCoords.y)
+        {
+            direction = route[i];
+            break;
+        }
+        MoveCoords(route[i], &x, &y);
+    }
+
+    if (direction == DIR_NONE)
+    {
+        // Not on the loop (shouldn't happen): just stand still.
+        movementActionId = GetFaceDirectionMovementAction(objectEvent->facingDirection);
+    }
+    else
+    {
+        SetObjectEventDirection(objectEvent, direction);
+        if (GetCollisionInDirection(objectEvent, direction))
+            movementActionId = GetWalkInPlaceFastMovementAction(direction); // blocked: wait
+        else
+            movementActionId = GetWalkFastMovementAction(direction);
+    }
+
+    ObjectEventSetSingleMovement(objectEvent, sprite, movementActionId);
+    objectEvent->singleMovementActive = TRUE;
+    sprite->sTypeFuncId = 2;
+    return TRUE;
+}
+
+movement_type_def(MovementType_WalkFastLoopLeftUpRightDown, gMovementTypeFuncs_WalkFastLoopLeftUpRightDown)
+
+bool8 MovementType_WalkFastLoopLeftUpRightDown_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    return MoveAlongWalkFastLoop(objectEvent, sprite, gWalkFastLoopLeftUpRightDownDirections);
+}
+
+movement_type_def(MovementType_WalkFastLoopDownLeftUpRight, gMovementTypeFuncs_WalkFastLoopDownLeftUpRight)
+
+bool8 MovementType_WalkFastLoopDownLeftUpRight_Step1(struct ObjectEvent *objectEvent, struct Sprite *sprite)
+{
+    return MoveAlongWalkFastLoop(objectEvent, sprite, gWalkFastLoopDownLeftUpRightDirections);
 }
 
 movement_type_def(MovementType_CopyPlayer, gMovementTypeFuncs_CopyPlayer)
