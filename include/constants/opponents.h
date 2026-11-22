@@ -6,7 +6,7 @@
 
 #define TRAINER_NONE                         0
 #define TRAINER_CEDAR_LASS                   1
-#define TRAINER_CEDAR_PICNICKER              2
+#define TRAINER_CEDAR_YOUNGSTER_1            2
 #define TRAINER_CEDAR_FISHERMAN              3
 #define TRAINER_CEDAR_TWINS                  4  
 #define TRAINER_CEDAR_BUG_CATCHER_1          5
@@ -861,12 +861,14 @@
 #define TRAINER_MAY_PLACEHOLDER             854
 #define TRAINER_GRUNT_PETALBURG_WOODS       855
 #define TRAINER_GRUNT_RUSTURF_TUNNEL        856
+#define TRAINER_CEDAR_YOUNGSTER_2           857
+#define TRAINER_CEDAR_ACE                   858
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 7 additional trainers before trainer flag space overflows
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 5 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     857
+#define TRAINERS_COUNT_EMERALD     859
 #define MAX_TRAINERS_COUNT_EMERALD 864
 
 #if IS_FRLG

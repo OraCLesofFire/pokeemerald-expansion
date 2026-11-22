@@ -114,8 +114,8 @@ script CedarForest_EventScript_Fisherman {
 
 script CedarForest_Ace_CountDefeated {
     setvar(VAR_TEMP_1, 9)
-    if (defeated(TRAINER_CEDAR_BUG_YOUNGSTER_1)) { subvar(VAR_TEMP_1, 1) }
-    if (defeated(TRAINER_CEDAR_BUG_YOUNGSTER_2)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_YOUNGSTER_1)) { subvar(VAR_TEMP_1, 1) }
+    if (defeated(TRAINER_CEDAR_YOUNGSTER_2)) { subvar(VAR_TEMP_1, 1) }
     if (defeated(TRAINER_CEDAR_BUG_CATCHER_1)) { subvar(VAR_TEMP_1, 1) }
     if (defeated(TRAINER_CEDAR_BUG_CATCHER_2)) { subvar(VAR_TEMP_1, 1) }
     if (defeated(TRAINER_CEDAR_LASS)) { subvar(VAR_TEMP_1, 1) }
