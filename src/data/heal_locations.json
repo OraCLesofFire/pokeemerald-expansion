@@ -349,6 +349,22 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_TOWN2",
+      "map": "MAP_TOWN2",
+      "x": 24,
+      "y": 7,
+      "Respawn Map": "MAP_TOWN2_POKEMON_CENTER_1F",
+      "Respawn NPC": "LOCALID_TOWN2_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_TOWN2_PLAYER_HOUSE_2F",
+      "map": "MAP_TOWN2_PLAYER_HOUSE_2F",
+      "x": 7,
+      "y": 4,
+      "Respawn Map": "MAP_TOWN2_PLAYER_HOUSE",
+      "Respawn NPC": "LOCALID_MOM"
     }
   ]
 }

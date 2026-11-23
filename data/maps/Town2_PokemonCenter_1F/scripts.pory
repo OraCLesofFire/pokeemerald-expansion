@@ -1,4 +1,11 @@
-mapscripts Town2_PokemonCenter_1F_MapScripts {}
+mapscripts Town2_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setrespawn(HEAL_LOCATION_TOWN2)
+    }
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+
 
 //
 // NPC TALK EVENTS

@@ -5,27 +5,30 @@ Town2_Player_House_MapScripts::
 Town2_Player_House_EventScript_Mom::
 # 4 "data/maps/Town2_Player_House/scripts.pory"
 	goto_if_set FLAG_PLAYER_VISITED_MOM, Town2_Player_House_EventScript_Mom_1
-# 8 "data/maps/Town2_Player_House/scripts.pory"
-	msgbox Town2_Player_House_EventScript_Mom_Text_1, MSGBOX_NPC
 # 9 "data/maps/Town2_Player_House/scripts.pory"
-	setflag FLAG_PLAYER_VISITED_MOM
+	msgbox Town2_Player_House_EventScript_Mom_Text_1, MSGBOX_NPC
 # 10 "data/maps/Town2_Player_House/scripts.pory"
+	setflag FLAG_PLAYER_VISITED_MOM
+# 11 "data/maps/Town2_Player_House/scripts.pory"
 	setvar VAR_TOWN2_STATE, 1
 	return
 
 Town2_Player_House_EventScript_Mom_1:
 # 5 "data/maps/Town2_Player_House/scripts.pory"
 	msgbox Town2_Player_House_EventScript_Mom_Text_0, MSGBOX_NPC
+# 6 "data/maps/Town2_Player_House/scripts.pory"
+	setrespawn HEAL_LOCATION_TOWN2_PLAYER_HOUSE_2F
 	return
 
 
 Town2_Player_House_EventScript_Mom_Text_0:
 # 5 "data/maps/Town2_Player_House/scripts.pory"
+	.string "Are you tired? How about a rest?\p"
 	.string "Feel free to come back and visit\n"
 	.string "anytime.$"
 
 Town2_Player_House_EventScript_Mom_Text_1:
-# 8 "data/maps/Town2_Player_House/scripts.pory"
+# 9 "data/maps/Town2_Player_House/scripts.pory"
 	.string "Oh! {PLAYER}, you're home! How's school?\p"
 	.string "The gym challenge?\n"
 	.string "You know your grandfather was the old\l"

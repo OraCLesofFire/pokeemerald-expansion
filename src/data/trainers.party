@@ -141,7 +141,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_BUG_CATCHER_2 ===
-Name: Mason
+Name: MASON
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -182,7 +182,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_RANGER_1 ===
-Name: Derek
+Name: DEREK
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_M
 Music: Cool
@@ -198,7 +198,7 @@ Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_RANGER_2 ===
-Name: Heather
+Name: HEATHER
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -214,7 +214,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_LASS ===
-Name: Jacey
+Name: JACEY
 Class: Lass
 Pic: Lass
 Music: Female
@@ -230,7 +230,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CEDAR_FISHERMAN ===
-Name: Gary
+Name: GARY
 Class: Fisherman
 Pic: Fisherman
 Music: Hiker
@@ -259,19 +259,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Growlithe
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Electrike
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Rockruff
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Snubbull
-Level: 8
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_CEDAR_FOREST_CHIKORITA ===
@@ -287,10 +287,10 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Psyduck
-Level: 86
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chikorita
+Tepig
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -310,7 +310,7 @@ Morelull
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tepig
+Mudkip
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -330,12 +330,12 @@ Growlithe
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Mudkip
+chikorita
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_BUG_CATCHER ===
-Name: Brooks
+Name: BROOKS
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -352,7 +352,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_HIKER ===
-Name: Doug
+Name: DOUG
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -373,9 +373,9 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_RANGER_1 ===
-Name: Brenda
+Name: BRYAN
 Class: Pkmn Ranger
-Pic: TRAINER_PIC_POKEMON_RANGER_F
+Pic: TRAINER_PIC_POKEMON_RANGER_M
 Music: Cool
 Double Battle: No
 AI: Check Bad Move
@@ -393,7 +393,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_RANGER_2 ===
-Name: Shelly
+Name: SHELLY
 Class: Pkmn Ranger
 Pic: TRAINER_PIC_POKEMON_RANGER_F
 Music: Cool
@@ -417,7 +417,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CISTERN_EXTERIOR_COLLECTOR ===
-Name: Todd
+Name: TODD
 Class: Collector
 Pic: TRAINER_PIC_COLLECTOR
 Music: Suspicious
