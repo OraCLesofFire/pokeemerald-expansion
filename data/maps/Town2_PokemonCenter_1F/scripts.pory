@@ -1,4 +1,10 @@
-mapscripts Town2_PokemonCenter_1F_MapScripts {}
+// Every Pokémon Center 1F needs this ON_RESUME script. It resets the
+// "player waiting in the Union Room" name that the nurse checks after healing.
+// Without it the nurse reads uninitialized memory as a player name, prints a
+// huge garbage string, and every textbox afterwards comes out blank/white.
+mapscripts Town2_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
 
 //
 // NPC TALK EVENTS
